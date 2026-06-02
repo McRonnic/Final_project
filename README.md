@@ -14,3 +14,5 @@ Simple tests for onliner.by webpage:
 11. Weather date test
 
 POM was impemented using Page Manager
+
+https://mcronnic.github.io/Final_project/#
