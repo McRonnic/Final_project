@@ -3,12 +3,12 @@ import { Page, Locator } from '@playwright/test'
 import LoginPage from "./LoginPage.ts";
 import Auto from "./Auto.ts";
 import Catalog from "./Catalog.ts";
-import FleaMarket from "./fleaMarket.ts";
-import Forum from "./forum.ts";
-import Main from "./main.ts";
-import RealEstate from "./realEstate.ts";
-import Services from "./services.ts";
-import News from "./news.ts";
+import FleaMarket from "./FleaMarket.ts";
+import Forum from "./Forum.ts";
+import Main from "./Main.ts";
+import RealEstate from "./RealEstate.ts";
+import Services from "./Services.ts";
+import News from "./News.ts";
 import Weather from "./Weather.ts";
 
 
