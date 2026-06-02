@@ -97,3 +97,19 @@ jobs:
           name: playwright-report
           path: ./playwright-report
           retention-days: 10
+
+      - name: Send Telegram Notification
+        # Этот шаг выполнится ВСЕГДА, даже если тесты упали
+        if: always() 
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_USER_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          format: markdown
+          message: |
+            *Статус прогона тестов:* ${{ job.status == 'success' && '✅ Успешно' || '❌ Падение' }}
+            
+            *Репозиторий:* ${{ github.repository }}
+            *Ветка:* `${{ github.ref_name }}`
+            
+            🌐 [Посмотреть Allure-отчет](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_number }})
