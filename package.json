@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "lint": "eslint ю"
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
