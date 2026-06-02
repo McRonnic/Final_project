@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 import { Page, Locator } from '@playwright/test'
 import LoginPage from "./LoginPage.ts";
 import Auto from "./Auto.ts";
-import Catalog from "./catalog.ts";
+import Catalog from "./Catalog.ts";
 import FleaMarket from "./fleaMarket.ts";
 import Forum from "./forum.ts";
 import Main from "./main.ts";
