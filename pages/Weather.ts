@@ -12,6 +12,6 @@ export default class Weather {
         this.page = page
         this.weatherLink = page.getByRole('navigation').getByRole('link', { name: 'Погода в Минске +' })
         this.onlinerDate = page.locator('.b-weather-today__date').locator('dd')
-        this.date = (new Date).toLocaleDateString('ru-RU', {day: 'numeric', month: 'long'})
+        this.date = (new Date).toLocaleDateString('ru-RU', {day: 'numeric', month: 'long', timeZone: "Europe/Minsk"})
 }
 }
