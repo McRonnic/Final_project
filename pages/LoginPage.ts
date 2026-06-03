@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { test, expect } from '@playwright/test'
 import { Page, Locator } from '@playwright/test'
 
@@ -17,8 +18,8 @@ export default class LoginPage {
     constructor(page: Page) {
         this.page = page
         this.loginContainer = page.locator('.auth-form__title_condensed-default').getByText("Вход")
-        this.email = 'matsvei.chystsik@innowise.com'
-        this.password = '$v76gygf3MF_.qV'
+        this.email = process.env.LOGIN
+        this.password = process.env.PASSWORD
         this.emailInput = page.getByRole('textbox', { name: 'Ник или e-mail' })
         this.passwordInput = page.getByRole('textbox', { name: 'Пароль' })
         this.enterButton = page.getByRole('button', { name: 'Войти' })
@@ -35,3 +36,4 @@ export default class LoginPage {
     }
     
 }
+ 
