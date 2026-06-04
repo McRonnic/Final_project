@@ -1,16 +1,15 @@
-require('dotenv').config();
-import { test, expect } from '@playwright/test'
+import 'dotenv/config';
+import { test, expect } from '../fixtures/pManager.ts';
 import PageManager from '../pages/PageManager.ts'
 
 let pm: PageManager;
 
 test.describe('Onliner UI mobile', () => {
-  test.beforeEach(async ({ page }) => {
-    pm = new PageManager(page)
+  test.beforeEach(async ({ pm}) => {
     await pm.main.navigate()
   })
 
-  test('Main paige working', async () => {
+  test('Main paige working', async ({ pm }) => {
     
     const response = await pm.main.stat()
     if (response) { 

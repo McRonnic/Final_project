@@ -1,17 +1,16 @@
 import 'dotenv/config';
-import { test, expect } from '@playwright/test'
 import PageManager from '../pages/PageManager.ts'
+import { test, expect } from '../fixtures/pManager.ts';
 
 
-let pm: PageManager;
+//let pm: PageManager;
 
 test.describe('Onliner UI desktop', () => {
-  test.beforeEach(async ({ page }) => {
-    pm = new PageManager(page)
-    await pm.main.navigate()
-  })
+   test.beforeEach(async ({ pm }) => {
+      await pm.main.navigate()
+    })
 
-  test('Main paige working', async () => {
+  test('Main paige working', async ({ pm }) => {
     
     const response = await pm.main.stat()
     if (response) { 
@@ -21,7 +20,7 @@ test.describe('Onliner UI desktop', () => {
   }
   })
 
-  test('Nav bar test', async () => {
+  test('Nav bar test', async ({ pm }) => {
     await pm.auto.navAuto.click()
     await expect(pm.page).toHaveURL('https://ab.onliner.by/')
     await pm.catalog.navCatalog.click()
@@ -39,18 +38,18 @@ test.describe('Onliner UI desktop', () => {
 
   })
 
-  test('Logo test', async () => {
+  test('Logo test', async ({ pm }) => {
     await pm.auto.navAuto.click()
     await pm.main.logo.click()
     await expect(pm.page).toHaveURL('https://www.onliner.by/')  
   })
 
-  test('Login button test', async () => {
+  test('Login button test', async ({ pm }) => {
     await pm.main.login.click()
     await expect(pm.loginPage.loginContainer).toBeVisible()  
   })
 
-  test('Search field positive test', async () => {
+  test('Search field positive test', async ({ pm }) => {
     await pm.main.search.fill('huawei')
     await pm.main.searchLink.click()
     await expect(pm.page).toHaveURL(/.*catalog.*/)
@@ -58,18 +57,18 @@ test.describe('Onliner UI desktop', () => {
 
   })
 
-  test('Search field negative test', async () => {
+  test('Search field negative test', async ({ pm }) => {
     await pm.main.search.fill('asdfast')
     await expect(pm.main.searchLink).toBeHidden()
   })
 
-   test('Registration link test', async () => {
+   test('Registration link test', async ({ pm }) => {
     await pm.main.login.click()
     await pm.main.registrationLink.click()
     await expect(pm.page).toHaveURL(/.*registration.*/)
   })
 
-  test('Footer links test', async () => {
+  test('Footer links test', async ({ pm }) => {
     for (let i = 0; i < pm.main.footerLinks.length; i++) {
       await pm.main.getLocator(pm.main.footerLinks[i])
       await expect(pm.page).toHaveURL(new RegExp(`.*${pm.main.footerPages[i]}.*`))
@@ -77,18 +76,18 @@ test.describe('Onliner UI desktop', () => {
     }
   })
 
-  test('Auto dropdown visibility test', async () => {
+  test('Auto dropdown visibility test', async ({ pm }) => {
     await pm.auto.navAuto.hover()
     await expect(pm.auto.dropdown).toBeVisible()
   })
 
-  test('Login positive scenario test', async () => {
+  test('Login positive scenario test', async ({ pm }) => {
     await pm.main.login.click()
     await pm.loginPage.login(pm.loginPage.email, pm.loginPage.password)
     await expect(pm.loginPage.securityText).toBeVisible()
   })
 
-  test('Login negative scenario test', async () => {
+  test('Login negative scenario test', async ({ pm }) => {
     await pm.main.login.click()
     await pm.loginPage.login('', pm.loginPage.password)
     await expect(pm.loginPage.noEmail).toBeVisible();
@@ -98,7 +97,7 @@ test.describe('Onliner UI desktop', () => {
     await expect(pm.loginPage.wrongCredentials).toBeVisible();
   })
 
-  test('Weather date test', async () => {
+  test('Weather date test', async ({ pm }) => {
     await pm.weather.weatherLink.click()
     await expect(pm.weather.onlinerDate).toHaveText(pm.weather.date)
   })
