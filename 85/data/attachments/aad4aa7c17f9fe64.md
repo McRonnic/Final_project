@@ -1,0 +1,2033 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: OnlinerUIdesktop.spec.ts >> Onliner UI desktop >> Footer links test
+- Location: tests/OnlinerUIdesktop.spec.ts:71:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('footer').getByText('Вакансии')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - banner [ref=e6]:
+      - text: ‹ ‹ ‹
+      - navigation [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Промокод в приложении" [ref=e12] [cursor=pointer]:
+              - /url: https://onliner.go.link/4FJ44
+              - generic [ref=e13]:
+                - text: Промокод в приложении
+                - img [ref=e14]
+            - link "Каталог" [ref=e16] [cursor=pointer]:
+              - /url: https://catalog.onliner.by
+              - generic [ref=e17]: Каталог
+          - listitem [ref=e18]:
+            - link "‹ Новости" [ref=e19] [cursor=pointer]:
+              - /url: https://www.onliner.by
+              - generic [ref=e20]: ‹ Новости
+          - listitem [ref=e21]:
+            - link "‹ Автобарахолка" [ref=e22] [cursor=pointer]:
+              - /url: https://ab.onliner.by
+              - generic [ref=e23]: ‹ Автобарахолка
+          - listitem [ref=e24]:
+            - link "‹ Дома и квартиры" [ref=e25] [cursor=pointer]:
+              - /url: https://r.onliner.by/pk
+              - generic [ref=e26]: ‹ Дома и квартиры
+          - listitem [ref=e27]:
+            - link "Услуги" [ref=e28] [cursor=pointer]:
+              - /url: https://s.onliner.by/tasks
+              - generic [ref=e29]: Услуги
+          - listitem [ref=e30]:
+            - link "Барахолка" [ref=e31] [cursor=pointer]:
+              - /url: https://baraholka.onliner.by/
+              - generic [ref=e32]: Барахолка
+          - listitem [ref=e33]:
+            - link "Форум" [ref=e34] [cursor=pointer]:
+              - /url: https://forum.onliner.by/
+              - generic [ref=e35]: Форум
+        - link "Onlíner Клевер" [ref=e36] [cursor=pointer]:
+          - /url: https://clever.onliner.by/?utm_source=onliner&utm_medium=navigation&utm_campaign=clever
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link "$ 2,9386" [ref=e39] [cursor=pointer]:
+              - /url: https://kurs.onliner.by/
+          - listitem [ref=e40]:
+            - link "Погода в Минске +11" [ref=e41] [cursor=pointer]:
+              - /url: https://pogoda.onliner.by/
+              - generic "Погода в Минске" [ref=e42]
+              - text: "+11"
+        - generic [ref=e43]: 18+
+        - list
+      - generic [ref=e45]:
+        - link "Onlíner" [ref=e47] [cursor=pointer]:
+          - /url: https://www.onliner.by
+          - img "Onlíner" [ref=e48]
+        - generic [ref=e49]:
+          - textbox "Поиск в Каталоге. Например, \"планшет ipad air\"" [ref=e52]
+          - generic [ref=e53]:
+            - generic [ref=e56] [cursor=pointer]:
+              - link "Вход" [ref=e57]:
+                - /url: https://profile.onliner.by/login?redirect=https://www.onliner.by/
+              - generic "Facebook" [ref=e58]
+              - generic "ВКонтакте" [ref=e59]
+              - generic "Google" [ref=e60]
+            - link "Корзина" [ref=e63] [cursor=pointer]:
+              - /url: https://cart.onliner.by
+    - generic [ref=e65]:
+      - generic [ref=e68]:
+        - link [ref=e69] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/headphones/anker/ankscl5pwht?utm_source=mainpage&utm_medium=button_logo&utm_campaign=anker&utm_content=guinness_white
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - link "Наушники с рекордом Гиннесса" [ref=e72] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/headphones/anker/ankscl5pwht?utm_source=mainpage&utm_medium=button_logo&utm_campaign=anker&utm_content=guinness_white
+              - generic [ref=e73]: Наушники с рекордом Гиннесса
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "Мобильные телефоны" [ref=e76] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/mobile
+              - generic [ref=e77]: Мобильные телефоны
+          - listitem [ref=e78]:
+            - link "Ноутбуки" [ref=e79] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/notebook
+              - generic [ref=e80]: Ноутбуки
+          - listitem [ref=e81]:
+            - link "Видеокарты" [ref=e82] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/videocard
+              - generic [ref=e83]: Видеокарты
+          - listitem [ref=e84]:
+            - link "Наушники и гарнитуры" [ref=e85] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/headphones
+              - generic [ref=e86]: Наушники и гарнитуры
+          - listitem [ref=e87]:
+            - link "Телевизоры" [ref=e88] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/tv
+              - generic [ref=e89]: Телевизоры
+          - listitem [ref=e90]:
+            - link "Холодильники" [ref=e91] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/refrigerator
+              - generic [ref=e92]: Холодильники
+          - listitem [ref=e93]:
+            - link "Процессоры" [ref=e94] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/cpu
+              - generic [ref=e95]: Процессоры
+          - listitem [ref=e96]:
+            - link "Умные часы и браслеты" [ref=e97] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/smartwatch
+              - generic [ref=e98]: Умные часы и браслеты
+          - listitem [ref=e99]:
+            - link "Стиральные машины" [ref=e100] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/washingmachine
+              - generic [ref=e101]: Стиральные машины
+          - listitem [ref=e102]:
+            - link "Планшеты" [ref=e103] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/tabletpc
+              - generic [ref=e104]: Планшеты
+          - listitem [ref=e105]:
+            - link "Принтеры и МФУ" [ref=e106] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/printers
+              - generic [ref=e107]: Принтеры и МФУ
+      - generic [ref=e109]:
+        - link "Onlíner Prime Onlíner Prime" [ref=e110] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/prime
+          - img "Onlíner Prime" [ref=e113]
+          - generic [ref=e115]: Onlíner Prime
+        - link "Электроника Электроника" [ref=e116] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/electronics
+          - img "Электроника" [ref=e119]
+          - generic [ref=e121]: Электроника
+        - link "Компьютеры и сети Компьютеры и сети" [ref=e122] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/computers
+          - img "Компьютеры и сети" [ref=e125]
+          - generic [ref=e127]: Компьютеры и сети
+        - link "Бытовая техника Бытовая техника" [ref=e128] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/appliance
+          - img "Бытовая техника" [ref=e131]
+          - generic [ref=e133]: Бытовая техника
+        - link "На каждый день На каждый день" [ref=e134] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/fmcg
+          - img "На каждый день" [ref=e137]
+          - generic [ref=e139]: На каждый день
+        - link "Стройка и ремонт Стройка и ремонт" [ref=e140] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/building
+          - img "Стройка и ремонт" [ref=e143]
+          - generic [ref=e145]: Стройка и ремонт
+        - link "Дом и сад Дом и сад" [ref=e146] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/household
+          - img "Дом и сад" [ref=e149]
+          - generic [ref=e151]: Дом и сад
+        - link "Авто и мото Авто и мото" [ref=e152] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/auto
+          - img "Авто и мото" [ref=e155]
+          - generic [ref=e157]: Авто и мото
+        - link "Красота и спорт Красота и спорт" [ref=e158] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/lifestyle
+          - img "Красота и спорт" [ref=e161]
+          - generic [ref=e163]: Красота и спорт
+        - link "Детям и мамам Детям и мамам" [ref=e164] [cursor=pointer]:
+          - /url: https://catalog.onliner.by/cat/kids
+          - img "Детям и мамам" [ref=e167]
+          - generic [ref=e169]: Детям и мамам
+      - generic [ref=e170]:
+        - grid [ref=e171]:
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - generic:
+                  - link "Купили запущенный дом и превратили в конфетку" [ref=e175] [cursor=pointer]:
+                    - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvcmVhbHQub25saW5lci5ieVwvMjAyNlwvMDhcLzA4XC9kYWNobnlqLXNlem9uLTMzIiwiaW5kZXgiOjAsImlkZW50aXR5IjoiMTowOjA6MTc4NjE2NjEyNCIsInNpZ24iOiJiZjJkMzQzY2Q4OTY3ZjBmIn0%3D
+                    - heading "Купили запущенный дом и превратили в конфетку" [level=3] [ref=e176]:
+                      - generic [ref=e177]: Купили запущенный дом и превратили в конфетку
+                  - link "Недвижимость" [ref=e178] [cursor=pointer]:
+                    - /url: https://realt.onliner.by
+              - generic [ref=e181]:
+                - generic:
+                  - link "47 литров воды в салоне и Passat с пробегом 720 тысяч. «Моя первая тачка»" [ref=e182] [cursor=pointer]:
+                    - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvYXV0by5vbmxpbmVyLmJ5XC8yMDI2XC8wOFwvMDhcL3BlcnZ1eXUtemFieXQtbmV2b3ptb3pobm8iLCJpbmRleCI6MCwiaWRlbnRpdHkiOiIxOjA6MToxNzg2MTY1OTYyIiwic2lnbiI6IjRkNWYwYzgwZmU5ZTE1YzQifQ%3D%3D
+                    - heading "47 литров воды в салоне и Passat с пробегом 720 тысяч. «Моя первая тачка»" [level=3] [ref=e183]:
+                      - generic [ref=e184]: 47 литров воды в салоне и Passat с пробегом 720 тысяч. «Моя первая тачка»
+                  - link "Авто" [ref=e185] [cursor=pointer]:
+                    - /url: https://auto.onliner.by
+                  - link "23" [ref=e186] [cursor=pointer]:
+                    - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvYXV0by5vbmxpbmVyLmJ5XC9jb21tZW50c1wvMjAyNlwvMDhcLzA4XC9wZXJ2dXl1LXphYnl0LW5ldm96bW96aG5vXC8%2FaW50X3NvdXJjZT1idWJibGVfbWFpbl90aWxlI2NvbW1lbnRzIiwiaW5kZXgiOjAsImlkZW50aXR5IjoiMTowOjE6MTc4NjE2NTk2MiIsInNpZ24iOiI1ZjdkNDM1YWQyM2Q3MjFjIn0%3D
+                    - generic [ref=e188]: "23"
+              - generic [ref=e191]:
+                - generic:
+                  - link "Узнаете олимпийского чемпиона по детскому фото? Проверяем" [ref=e192] [cursor=pointer]:
+                    - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvc3BvcnQub25saW5lci5ieVwvMjAyNlwvMDhcLzA4XC90ZXN0LWNoZW1waW9uLXBvLWRldHNrb211LWZvdG8iLCJpbmRleCI6MSwiaWRlbnRpdHkiOiIxOjA6MjoxNzg2MTY1MjgzIiwic2lnbiI6ImUwZDFkZDg3YmI0YjVjNTIifQ%3D%3D
+                    - heading "Узнаете олимпийского чемпиона по детскому фото? Проверяем" [level=3] [ref=e193]:
+                      - generic [ref=e194]: Узнаете олимпийского чемпиона по детскому фото? Проверяем
+                  - link "Спорт" [ref=e195] [cursor=pointer]:
+                    - /url: https://sport.onliner.by
+              - generic [ref=e198]:
+                - generic:
+                  - link "А что вообще поменялось? Почему новые гаджеты больше не вызывают «вау»" [ref=e199] [cursor=pointer]:
+                    - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvdGVjaC5vbmxpbmVyLmJ5XC8yMDI2XC8wOFwvMDhcL3RleG5pa2EtcGVyZXN0YWxhLXVkaXZseWF0IiwiaW5kZXgiOjAsImlkZW50aXR5IjoiMTowOjM6MTc4NjE2NjM3OCIsInNpZ24iOiIxYzUyYzNiNmFiNmJmZjY5In0%3D
+                    - heading "А что вообще поменялось? Почему новые гаджеты больше не вызывают «вау»" [level=3] [ref=e200]:
+                      - generic [ref=e201]: А что вообще поменялось? Почему новые гаджеты больше не вызывают «вау»
+                  - link "Технологии" [ref=e202] [cursor=pointer]:
+                    - /url: https://tech.onliner.by
+                  - link "48" [ref=e203] [cursor=pointer]:
+                    - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvdGVjaC5vbmxpbmVyLmJ5XC9jb21tZW50c1wvMjAyNlwvMDhcLzA4XC90ZXhuaWthLXBlcmVzdGFsYS11ZGl2bHlhdFwvP2ludF9zb3VyY2U9YnViYmxlX21haW5fdGlsZSNjb21tZW50cyIsImluZGV4IjowLCJpZGVudGl0eSI6IjE6MDozOjE3ODYxNjYzNzgiLCJzaWduIjoiZjU5OTE1ZGU1MjQwNGFkNCJ9
+                    - generic [ref=e205]: "48"
+            - generic [ref=e208]:
+              - generic:
+                - link "Математик нашел способ обыгрывать букмекеров. Заработал почти $1 миллиард" [ref=e209] [cursor=pointer]:
+                  - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvbW9uZXkub25saW5lci5ieVwvMjAyNlwvMDhcLzA4XC9iaWxsLWJlbnRlciIsImluZGV4IjoxLCJpZGVudGl0eSI6IjE6MTowOjE3ODYxNjYzNDYiLCJzaWduIjoiODVlZTQ3NzYzNzNhYzA0ZSJ9
+                  - heading "Математик нашел способ обыгрывать букмекеров. Заработал почти $1 миллиард" [level=3] [ref=e210]:
+                    - generic [ref=e211]: Математик нашел способ обыгрывать букмекеров. Заработал почти $1 миллиард
+                - link "Кошелек" [ref=e212] [cursor=pointer]:
+                  - /url: https://money.onliner.by
+            - generic [ref=e215]:
+              - generic:
+                - link "«Очень много „нельзя“». Что индиец так и не понял за 11 лет жизни в Беларуси" [ref=e216] [cursor=pointer]:
+                  - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvcGVvcGxlLm9ubGluZXIuYnlcLzIwMjZcLzA4XC8wOFwvaW5kaWVjLW8tYmVsb3J1c2F4IiwiaW5kZXgiOjEsImlkZW50aXR5IjoiMToxOjE6MTc4NjE2NTgzNSIsInNpZ24iOiJiMmNhMGU1M2Y3MDllNmRhIn0%3D
+                  - heading "«Очень много „нельзя“». Что индиец так и не понял за 11 лет жизни в Беларуси" [level=3] [ref=e217]:
+                    - generic [ref=e218]: «Очень много „нельзя“». Что индиец так и не понял за 11 лет жизни в Беларуси
+                - generic [ref=e219]: Спецпроект
+            - generic [ref=e222]:
+              - generic:
+                - link "Крупные торговые сети придут в деревни. Подробности эксперимента" [ref=e223] [cursor=pointer]:
+                  - /url: https://money.onliner.by/2026/08/07/krupnye-torgovye-seti
+                  - heading "Крупные торговые сети придут в деревни. Подробности эксперимента" [level=3] [ref=e224]:
+                    - generic [ref=e225]: Крупные торговые сети придут в деревни. Подробности эксперимента
+                - link "Кошелек" [ref=e226] [cursor=pointer]:
+                  - /url: https://money.onliner.by
+            - generic [ref=e229]:
+              - generic:
+                - link "Игровой ноутбук вместо ПК? Выбираем модель" [ref=e230] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/2026/08/05/kak-vybrat-igrovoi-noutbuk
+                  - heading "Игровой ноутбук вместо ПК? Выбираем модель" [level=3] [ref=e231]:
+                    - generic [ref=e232]: Игровой ноутбук вместо ПК? Выбираем модель
+                - generic [ref=e233]: ТОП-10
+                - link "141" [ref=e234] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/comments/2026/08/05/kak-vybrat-igrovoi-noutbuk/?int_source=bubble_main_tile#comments
+                  - generic [ref=e236]: "141"
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - generic:
+                - 'link "Готовые сборки ПК: от недорогой до топовой" [ref=e241] [cursor=pointer]':
+                  - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvdGVjaC5vbmxpbmVyLmJ5XC8yMDI2XC8wN1wvMzBcL3Nib3JraS1wayIsImluZGV4IjoyLCJpZGVudGl0eSI6IjE6MjowOjE3ODYxMDc1NDciLCJzaWduIjoiMjAzODI1MTUxNWEyZmU2YyJ9
+                  - 'heading "Готовые сборки ПК: от недорогой до топовой" [level=3] [ref=e242]':
+                    - generic [ref=e243]: "Готовые сборки ПК: от недорогой до топовой"
+                - generic [ref=e244]: Гайд
+                - link "194" [ref=e245] [cursor=pointer]:
+                  - /url: https://go.onliner.by/tiles.acp/redirect/eyJ1cmwiOiJodHRwczpcL1wvdGVjaC5vbmxpbmVyLmJ5XC9jb21tZW50c1wvMjAyNlwvMDdcLzMwXC9zYm9ya2ktcGtcLz9pbnRfc291cmNlPWJ1YmJsZV9tYWluX3RpbGUjY29tbWVudHMiLCJpbmRleCI6MiwiaWRlbnRpdHkiOiIxOjI6MDoxNzg2MTA3NTQ3Iiwic2lnbiI6ImUxNmJjOTdmMDg3N2E2MzcifQ%3D%3D
+                  - generic [ref=e247]: "194"
+            - generic [ref=e250]:
+              - generic:
+                - link "«Вал звонков». Кредит под 1% взбудоражил рынок новостроек" [ref=e251] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/2026/08/07/koll-centr-razryvaetsya
+                  - heading "«Вал звонков». Кредит под 1% взбудоражил рынок новостроек" [level=3] [ref=e252]:
+                    - generic [ref=e253]: «Вал звонков». Кредит под 1% взбудоражил рынок новостроек
+                - link "Недвижимость" [ref=e254] [cursor=pointer]:
+                  - /url: https://realt.onliner.by
+            - generic [ref=e257]:
+              - generic:
+                - link "Пловец 55 часов не спал и пересек Балтийское море. Объясняем, как это возможно" [ref=e258] [cursor=pointer]:
+                  - /url: https://sport.onliner.by/2026/08/07/bartlomej-kubkovskij-baltika
+                  - heading "Пловец 55 часов не спал и пересек Балтийское море. Объясняем, как это возможно" [level=3] [ref=e259]:
+                    - generic [ref=e260]: Пловец 55 часов не спал и пересек Балтийское море. Объясняем, как это возможно
+                - link "Спорт" [ref=e261] [cursor=pointer]:
+                  - /url: https://sport.onliner.by
+                - link "36" [ref=e262] [cursor=pointer]:
+                  - /url: https://sport.onliner.by/comments/2026/08/07/bartlomej-kubkovskij-baltika/?int_source=bubble_main_tile#comments
+                  - generic [ref=e264]: "36"
+            - generic [ref=e267]:
+              - generic:
+                - link "Как белорусы «монетизируют» квартиры в бетоне" [ref=e268] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/2026/08/07/sdaetsya-pri-uslovii
+                  - heading "Как белорусы «монетизируют» квартиры в бетоне" [level=3] [ref=e269]:
+                    - generic [ref=e270]: Как белорусы «монетизируют» квартиры в бетоне
+                - link "Недвижимость" [ref=e271] [cursor=pointer]:
+                  - /url: https://realt.onliner.by
+        - link [ref=e276] [cursor=pointer]:
+          - /url: https://yandex.ru/adfox/260941/clickURL?ad-session-id=5828361786240692288&adfox-version=1&duid=1786240684246452346&efc=1&esc=0&hash=9663ae58e44d943b&initial-engine-id=glb&laas_region_id=ouq&p1=dfjlt&p2=fzvh&p5=bivyud&pr=bwittme&puid1=main&rand=gsbfsnn&rqs=pQKiTAMeGhe03ndqcoCOtK9JoQgc2-6E&rsya-block-id=R-A-14365215-2&sj=4_cbqyoRUpTqYKMfFfgEHEy5vehqU4aZaMXGvR2sETBus36UjV_6T8Iq6ge7_E9TS3IyUe8LLYiwQBA5W5kFLZ1UuBMB9-uUz2ZvOizhEZYW55MTL3BaZd7_mq9SKKRLiWPqou2FFrZQhunFkVZAhN8hlBdBav2Aje4LfbK7DiW9_fU6oKBsHD7Yy6GxkoUnDdeY-mNFTrVGg4QGE-Rh&ybv=0.1306070&ylv=0.1306070&ytt=258385232527365&pf=https%3A%2F%2Fcatalog.onliner.by%2F%3Futm_source%3Donliner%26utm_medium%3Dadfox
+      - generic [ref=e277]:
+        - banner [ref=e278]:
+          - heading "Каталог Onlíner" [level=2] [ref=e279]:
+            - link "Каталог Onlíner" [ref=e280] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/?utm_source=mainpage&utm_medium=layer_name&utm_campaign=catalog
+          - link "Сравнивай и покупай" [ref=e281] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/?utm_source=mainpage&utm_medium=layer_button&utm_campaign=catalog
+            - text: Сравнивай и покупай
+            - img [ref=e282]
+        - grid [ref=e285]:
+          - generic [ref=e286]:
+            - link "Помогите нам стать лучше Пройдите короткий опрос о покупках с оплатой частями" [ref=e289] [cursor=pointer]:
+              - /url: https://a08551.webask.io/dd7j9jkd6
+              - generic [ref=e290]: Помогите нам стать лучше
+              - paragraph [ref=e291]: Пройдите короткий опрос о покупках с оплатой частями
+            - link "76 ƃ/мес. по Minipay Самый доступный в Каталоге Macbook для учебы" [ref=e294] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/notebook/apple/mhfa4
+              - generic [ref=e295]: 76 ƃ/мес. по Minipay
+              - paragraph [ref=e296]: Самый доступный в Каталоге Macbook для учебы
+          - link "Всего от 466 ƃ Столы с регулировкой высоты с бесплатной доставкой Príme" [ref=e300] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/table?is_prime=1
+            - generic [ref=e301]: Всего от 466 ƃ
+            - paragraph [ref=e302]: Столы с регулировкой высоты с бесплатной доставкой Príme
+          - link "От 174 ƃ Покупайте принтеры для учебы в Каталоге Onlíner" [ref=e306] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/printers
+            - generic [ref=e307]: От 174 ƃ
+            - paragraph [ref=e308]: Покупайте принтеры для учебы в Каталоге Onlíner
+      - generic [ref=e310]:
+        - generic [ref=e312]:
+          - generic [ref=e313]:
+            - group "1 / 21" [ref=e314]:
+              - link [ref=e318] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/portablecharger/ugreen/pb5715000mah
+              - link "от 95 ,00 ƃ" [ref=e321] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/portablecharger/ugreen/pb5715000mah/prices
+                - generic [ref=e322]: от
+                - generic [ref=e323]: "95"
+                - generic [ref=e324]: ",00 ƃ"
+              - link "от 3,08 р/мес" [ref=e326] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/portablecharger/ugreen/pb5715000mah/prices?order=min_payment%3Aasc
+                - generic [ref=e327]: от 3,08 р/мес
+              - link "5 (3)" [ref=e328] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/portablecharger/ugreen/pb5715000mah/reviews
+                - generic [ref=e331]: "5"
+                - generic [ref=e332]: (3)
+              - link "Внешний аккумулятор Ugreen PB571 5000mAh (серый)" [ref=e334] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/portablecharger/ugreen/pb5715000mah
+            - group "2 / 21" [ref=e335]:
+              - generic [ref=e336]:
+                - link "–8%" [ref=e337] [cursor=pointer]:
+                  - /url: https://catalog.onliner.by/tv/blaupunkt/55mcg6000t/prices
+                - generic [ref=e338]: Зроблена ў Беларусі
+              - link [ref=e340] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/tv/blaupunkt/55mcg6000t
+              - link "от 1525 ,44 ƃ" [ref=e343] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/tv/blaupunkt/55mcg6000t/prices
+                - generic [ref=e344]: от
+                - generic [ref=e345]: "1525"
+                - generic [ref=e346]: ",44 ƃ"
+              - link "от 44,66 р/мес" [ref=e348] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/tv/blaupunkt/55mcg6000t/prices?order=min_payment%3Aasc
+                - generic [ref=e349]: от 44,66 р/мес
+              - link "5 (1)" [ref=e350] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/tv/blaupunkt/55mcg6000t/reviews
+                - generic [ref=e353]: "5"
+                - generic [ref=e354]: (1)
+              - link "MiniLED телевизор Blaupunkt 55MCG6000T" [ref=e356] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/tv/blaupunkt/55mcg6000t
+            - group "3 / 21" [ref=e357]:
+              - link "–10%" [ref=e359] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/samsung/sma175fzkccau/prices
+              - link [ref=e361] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/samsung/sma175fzkccau
+              - link "от 485 ,61 ƃ" [ref=e364] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/samsung/sma175fzkccau/prices
+                - generic [ref=e365]: от
+                - generic [ref=e366]: "485"
+                - generic [ref=e367]: ",61 ƃ"
+              - link "от 17,89 р/мес" [ref=e369] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/samsung/sma175fzkccau/prices?order=min_payment%3Aasc
+                - generic [ref=e370]: от 17,89 р/мес
+              - link "4.6 (5)" [ref=e371] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/samsung/sma175fzkccau/reviews
+                - generic [ref=e374]: "4.6"
+                - generic [ref=e375]: (5)
+              - link "Телефон Samsung Galaxy A17 4G SM-A175F 6GB/128GB (черный)" [ref=e377] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/samsung/sma175fzkccau
+            - group "4 / 21" [ref=e378]:
+              - generic [ref=e379]:
+                - link "–14%" [ref=e380] [cursor=pointer]:
+                  - /url: https://catalog.onliner.by/notebook/lenovo/83jg007pus/prices
+                - generic [ref=e381]: Выбор покупателей
+              - link [ref=e383] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/notebook/lenovo/83jg007pus
+              - link "от 3966 ,06 ƃ" [ref=e386] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/notebook/lenovo/83jg007pus/prices
+                - generic [ref=e387]: от
+                - generic [ref=e388]: "3966"
+                - generic [ref=e389]: ",06 ƃ"
+              - link "от 118,55 р/мес" [ref=e391] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/notebook/lenovo/83jg007pus/prices?order=min_payment%3Aasc
+                - generic [ref=e392]: от 118,55 р/мес
+              - link "5 (1)" [ref=e393] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/notebook/lenovo/83jg007pus/reviews
+                - generic [ref=e396]: "5"
+                - generic [ref=e397]: (1)
+              - link "Игровой ноутбук Lenovo LOQ 15AHP10 83JG007PUS" [ref=e399] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/notebook/lenovo/83jg007pus
+            - group "5 / 21" [ref=e400]:
+              - link "–13%" [ref=e402] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/backpack/xmix/cb01black/prices
+              - link [ref=e405] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/backpack/xmix/cb01black
+              - link "от 69 ,00 ƃ" [ref=e408] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/backpack/xmix/cb01black/prices
+                - generic [ref=e409]: от
+                - generic [ref=e410]: "69"
+                - generic [ref=e411]: ",00 ƃ"
+              - link "от 2,02 р/мес" [ref=e413] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/backpack/xmix/cb01black/prices?order=min_payment%3Aasc
+                - generic [ref=e414]: от 2,02 р/мес
+              - link "Нет отзывов" [ref=e415] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/backpack/xmix/cb01black/reviews
+                - generic [ref=e417]: Нет отзывов
+              - link "Городской рюкзак XMIX CB01 (черный)" [ref=e419] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/backpack/xmix/cb01black
+            - group "6 / 21" [ref=e420]:
+              - generic [ref=e421]:
+                - link "–27%" [ref=e422] [cursor=pointer]:
+                  - /url: https://catalog.onliner.by/robotcleaner/trouver/rle24sa/prices
+                - generic [ref=e423]: Выбор покупателей
+                - generic [ref=e424]: Onlíner рекомендует
+              - link [ref=e426] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/trouver/rle24sa
+              - link "от 289 ,00 ƃ" [ref=e429] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/trouver/rle24sa/prices
+                - generic [ref=e430]: от
+                - generic [ref=e431]: "289"
+                - generic [ref=e432]: ",00 ƃ"
+              - link "от 8,46 р/мес" [ref=e434] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/trouver/rle24sa/prices?order=min_payment%3Aasc
+                - generic [ref=e435]: от 8,46 р/мес
+              - link "4.8 (5)" [ref=e436] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/trouver/rle24sa/reviews
+                - generic [ref=e439]: "4.8"
+                - generic [ref=e440]: (5)
+              - link "Робот-пылесос Trouver Robot Vacuum E20s Pro White RLE24SA (евровилка, белый)" [ref=e442] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/trouver/rle24sa
+            - group "7 / 21" [ref=e443]:
+              - generic [ref=e444]:
+                - generic [ref=e446]: Выбор покупателей
+                - link "Обзор" [ref=e447] [cursor=pointer]:
+                  - /url: https://people.onliner.by/2023/06/20/nedorogie-sredstva-dlya-posudomoechnyx-mashin?utm_source=catalog&utm_medium=web&utm_campaign=overview&utm_content=8700216236751
+              - link [ref=e449] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/dishwashertablet/fairy/8700216236751
+              - link "от 61 ,99 ƃ" [ref=e452] [cursor=pointer]:
+                - /url: "https://catalog.onliner.by/dishwashertablet/fairy/8700216236751/prices "
+                - generic [ref=e453]: от
+                - generic [ref=e454]: "61"
+                - generic [ref=e455]: ",99 ƃ"
+              - link "от 1,82 р/мес" [ref=e457] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/dishwashertablet/fairy/8700216236751/prices ?order=min_payment%3Aasc
+                - generic [ref=e458]: от 1,82 р/мес
+              - link "4.7 (21)" [ref=e459] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/dishwashertablet/fairy/8700216236751/reviews
+                - generic [ref=e462]: "4.7"
+                - generic [ref=e463]: (21)
+              - link "Капсулы для посудомоечной машины Fairy Platinum Lemon All in 1 (96 шт)" [ref=e465] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/dishwashertablet/fairy/8700216236751
+            - group "8 / 21" [ref=e466]:
+              - link "–20%" [ref=e468] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/headphones/honor/shbme00black/prices
+              - link [ref=e471] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/headphones/honor/shbme00black
+              - link "от 59 ,00 ƃ" [ref=e474] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/headphones/honor/shbme00black/prices
+                - generic [ref=e475]: от
+                - generic [ref=e476]: "59"
+                - generic [ref=e477]: ",00 ƃ"
+              - link "от 1,73 р/мес" [ref=e479] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/headphones/honor/shbme00black/prices?order=min_payment%3Aasc
+                - generic [ref=e480]: от 1,73 р/мес
+              - link "3 (2)" [ref=e481] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/headphones/honor/shbme00black/reviews
+                - generic [ref=e484]: "3"
+                - generic [ref=e485]: (2)
+              - link "Наушники HONOR Choice Headphones Lite (черный, международная версия)" [ref=e487] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/headphones/honor/shbme00black
+            - group "9 / 21" [ref=e488]:
+              - generic [ref=e490]: Новинка
+              - link [ref=e492] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/nothing/phone4b8128bk
+              - link "от 1384 ,15 ƃ" [ref=e495] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/nothing/phone4b8128bk/prices
+                - generic [ref=e496]: от
+                - generic [ref=e497]: "1384"
+                - generic [ref=e498]: ",15 ƃ"
+              - link "от 47,41 р/мес" [ref=e500] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/nothing/phone4b8128bk/prices?order=min_payment%3Aasc
+                - generic [ref=e501]: от 47,41 р/мес
+              - link "Нет отзывов" [ref=e502] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/nothing/phone4b8128bk/reviews
+                - generic [ref=e504]: Нет отзывов
+              - link "Телефон Nothing Phone (4b) 8GB/128GB (черный)" [ref=e506] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/nothing/phone4b8128bk
+            - group "10 / 21" [ref=e507]:
+              - generic [ref=e510]: Onlíner рекомендует
+              - link [ref=e512] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/keyboards/redsquare/rsq20054
+              - link "от 120 ,00 ƃ" [ref=e515] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/keyboards/redsquare/rsq20054/prices
+                - generic [ref=e516]: от
+                - generic [ref=e517]: "120"
+                - generic [ref=e518]: ",00 ƃ"
+              - link "от 3,52 р/мес" [ref=e520] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/keyboards/redsquare/rsq20054/prices?order=min_payment%3Aasc
+                - generic [ref=e521]: от 3,52 р/мес
+              - link "4.8 (5)" [ref=e522] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/keyboards/redsquare/rsq20054/reviews
+                - generic [ref=e525]: "4.8"
+                - generic [ref=e526]: (5)
+              - link "Клавиатура Red Square Alumix TKL SE Cloudy (g3ms Sapphire)" [ref=e528] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/keyboards/redsquare/rsq20054
+            - group "11 / 21" [ref=e529]:
+              - link [ref=e531] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/steamcleaner/evolutionneolink/handy3wh
+              - link "от 89 ,00 ƃ" [ref=e534] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/steamcleaner/evolutionneolink/handy3wh/prices
+                - generic [ref=e535]: от
+                - generic [ref=e536]: "89"
+                - generic [ref=e537]: ",00 ƃ"
+              - link "от 2,61 р/мес" [ref=e539] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/steamcleaner/evolutionneolink/handy3wh/prices?order=min_payment%3Aasc
+                - generic [ref=e540]: от 2,61 р/мес
+              - link "Нет отзывов" [ref=e541] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/steamcleaner/evolutionneolink/handy3wh/reviews
+                - generic [ref=e543]: Нет отзывов
+              - link "Отпариватель Evolution Handy 3 (белый)" [ref=e545] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/steamcleaner/evolutionneolink/handy3wh
+            - group "12 / 21" [ref=e546]:
+              - generic [ref=e549]: Выбор покупателей
+              - link [ref=e551] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/aerogrill/xiaomi/mafds1201bl
+              - link "от 578 ,00 ƃ" [ref=e554] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/aerogrill/xiaomi/mafds1201bl/prices
+                - generic [ref=e555]: от
+                - generic [ref=e556]: "578"
+                - generic [ref=e557]: ",00 ƃ"
+              - link "от 16,92 р/мес" [ref=e559] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/aerogrill/xiaomi/mafds1201bl/prices?order=min_payment%3Aasc
+                - generic [ref=e560]: от 16,92 р/мес
+              - link "4.8 (13)" [ref=e561] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/aerogrill/xiaomi/mafds1201bl/reviews
+                - generic [ref=e564]: "4.8"
+                - generic [ref=e565]: (13)
+              - link "Аэрогриль (аэрофритюрница) Xiaomi Smart Double Stack Air Fryer 12L MAF-DS1201 (евровилка, черный)" [ref=e567] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/aerogrill/xiaomi/mafds1201bl
+            - group "13 / 21" [ref=e568]:
+              - generic [ref=e571]: Onlíner рекомендует
+              - link [ref=e573] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/vacuumcleaner/dreame/z20aquacycle
+              - link "от 1300 ,00 ƃ" [ref=e576] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/vacuumcleaner/dreame/z20aquacycle/prices
+                - generic [ref=e577]: от
+                - generic [ref=e578]: "1300"
+                - generic [ref=e579]: ",00 ƃ"
+              - link "от 38,06 р/мес" [ref=e581] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/vacuumcleaner/dreame/z20aquacycle/prices?order=min_payment%3Aasc
+                - generic [ref=e582]: от 38,06 р/мес
+              - link "4.7 (3)" [ref=e583] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/vacuumcleaner/dreame/z20aquacycle/reviews
+                - generic [ref=e586]: "4.7"
+                - generic [ref=e587]: (3)
+              - link "Пылесос Dreame Cordless Vacuum Cleaner Z20 Aqua Cycle (евровилка)" [ref=e589] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/vacuumcleaner/dreame/z20aquacycle
+            - group "14 / 21" [ref=e590]:
+              - generic [ref=e591]:
+                - generic [ref=e592]: Onlíner рекомендует
+                - link "Обзор" [ref=e593] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/2026/04/28/dreame-x60-ultra-complete?utm_source=catalog&utm_medium=web&utm_campaign=overview&utm_content=rlx87debl
+              - link [ref=e595] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/dreame/rlx87debl
+              - link "от 3950 ,00 ƃ" [ref=e598] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/dreame/rlx87debl/prices
+                - generic [ref=e599]: от
+                - generic [ref=e600]: "3950"
+                - generic [ref=e601]: ",00 ƃ"
+              - link "от 115,62 р/мес" [ref=e603] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/dreame/rlx87debl/prices?order=min_payment%3Aasc
+                - generic [ref=e604]: от 115,62 р/мес
+              - link "5 (11)" [ref=e605] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/dreame/rlx87debl/reviews
+                - generic [ref=e608]: "5"
+                - generic [ref=e609]: (11)
+              - link "Робот-пылесос Dreame Robot Vacuum X60 Ultra Complete Black RLX87DE (евровилка, черный)" [ref=e611] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/robotcleaner/dreame/rlx87debl
+            - group "15 / 21" [ref=e612]:
+              - link "Обзор" [ref=e614] [cursor=pointer]:
+                - /url: https://people.onliner.by/2024/09/04/kofemashini-delonghi?utm_source=catalog&utm_medium=web&utm_campaign=overview&utm_content=ecam22060b
+              - link [ref=e616] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/coffee/delonghi/ecam22060b
+              - link "от 1447 ,93 ƃ" [ref=e619] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/coffee/delonghi/ecam22060b/prices
+                - generic [ref=e620]: от
+                - generic [ref=e621]: "1447"
+                - generic [ref=e622]: ",93 ƃ"
+              - link "от 44,03 р/мес" [ref=e624] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/coffee/delonghi/ecam22060b/prices?order=min_payment%3Aasc
+                - generic [ref=e625]: от 44,03 р/мес
+              - link "4.5 (2)" [ref=e626] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/coffee/delonghi/ecam22060b/reviews
+                - generic [ref=e629]: "4.5"
+                - generic [ref=e630]: (2)
+              - link "Кофемашина DeLonghi Magnifica Start ECAM220.60.B" [ref=e632] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/coffee/delonghi/ecam22060b
+            - group "16 / 21" [ref=e633]:
+              - link [ref=e635] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/poco/pcf8pro12256b
+              - link "от 1630 ,00 ƃ" [ref=e638] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/poco/pcf8pro12256b/prices
+                - generic [ref=e639]: от
+                - generic [ref=e640]: "1630"
+                - generic [ref=e641]: ",00 ƃ"
+              - link "от 54,16 р/мес" [ref=e643] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/poco/pcf8pro12256b/prices?order=min_payment%3Aasc
+                - generic [ref=e644]: от 54,16 р/мес
+              - link "5 (4)" [ref=e645] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/poco/pcf8pro12256b/reviews
+                - generic [ref=e648]: "5"
+                - generic [ref=e649]: (4)
+              - link "Телефон POCO F8 Pro 12GB/256GB международная версия (черный)" [ref=e651] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/poco/pcf8pro12256b
+            - group "17 / 21" [ref=e652]:
+              - generic [ref=e653]:
+                - generic [ref=e655]: Выбор покупателей
+                - link "Обзор" [ref=e656] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/2025/06/25/mojku-vysokogo-davleniya?utm_source=catalog&utm_medium=web&utm_campaign=overview&utm_content=bhr2000mpro
+              - link [ref=e658] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/washers/bort/bhr2000mpro
+              - link "от 389 ,15 ƃ" [ref=e661] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/washers/bort/bhr2000mpro/prices
+                - generic [ref=e662]: от
+                - generic [ref=e663]: "389"
+                - generic [ref=e664]: ",15 ƃ"
+              - link "от 11,40 р/мес" [ref=e666] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/washers/bort/bhr2000mpro/prices?order=min_payment%3Aasc
+                - generic [ref=e667]: от 11,40 р/мес
+              - link "4.9 (36)" [ref=e668] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/washers/bort/bhr2000mpro/reviews
+                - generic [ref=e671]: "4.9"
+                - generic [ref=e672]: (36)
+              - link "Мойка высокого давления Bort BHR-2000M-Pro" [ref=e674] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/washers/bort/bhr2000mpro
+            - group "18 / 21" [ref=e675]:
+              - link [ref=e677] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/hairdryer/prostyle/tbd0602245301
+              - link "от 63 ,82 ƃ" [ref=e680] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/hairdryer/prostyle/tbd0602245301/prices
+                - generic [ref=e681]: от
+                - generic [ref=e682]: "63"
+                - generic [ref=e683]: ",82 ƃ"
+              - link "от 1,87 р/мес" [ref=e685] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/hairdryer/prostyle/tbd0602245301/prices?order=min_payment%3Aasc
+                - generic [ref=e686]: от 1,87 р/мес
+              - link "Нет отзывов" [ref=e687] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/hairdryer/prostyle/tbd0602245301/reviews
+                - generic [ref=e689]: Нет отзывов
+              - link "Фен-стайлер PROstyle TBD0602245301" [ref=e691] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/hairdryer/prostyle/tbd0602245301
+            - group "19 / 21" [ref=e692]:
+              - link [ref=e694] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mixer/polaris/phm5014
+              - link "336 ,13 ƃ" [ref=e697] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mixer/polaris/phm5014/prices
+                - generic [ref=e698]: "336"
+                - generic [ref=e699]: ",13 ƃ"
+              - link "4.7 (3)" [ref=e700] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mixer/polaris/phm5014/reviews
+                - generic [ref=e703]: "4.7"
+                - generic [ref=e704]: (3)
+              - link "Миксер Polaris PHM 5014" [ref=e706] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mixer/polaris/phm5014
+            - group "20 / 21" [ref=e707]:
+              - generic [ref=e708]:
+                - link "–14%" [ref=e709] [cursor=pointer]:
+                  - /url: "https://catalog.onliner.by/mobile/huawei/scalx912256oo/prices "
+                - generic [ref=e710]: Новинка
+                - link "Обзор" [ref=e711] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/2026/07/28/huawei-pura-90s-pro-max-review?utm_source=catalog&utm_medium=web&utm_campaign=overview&utm_content=scalx912256oo
+              - link [ref=e713] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/huawei/scalx912256oo
+              - link "от 2831 ,00 ƃ" [ref=e716] [cursor=pointer]:
+                - /url: "https://catalog.onliner.by/mobile/huawei/scalx912256oo/prices "
+                - generic [ref=e717]: от
+                - generic [ref=e718]: "2831"
+                - generic [ref=e719]: ",00 ƃ"
+              - link "от 82,87 р/мес" [ref=e721] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/huawei/scalx912256oo/prices ?order=min_payment%3Aasc
+                - generic [ref=e722]: от 82,87 р/мес
+              - link "Нет отзывов" [ref=e723] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/huawei/scalx912256oo/reviews
+                - generic [ref=e725]: Нет отзывов
+              - link "Телефон Huawei Pura 90s Pro Max SCA-LX9 12GB/256GB (оранжево-голубой, международная версия)" [ref=e727] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/mobile/huawei/scalx912256oo
+            - group "21 / 21" [ref=e728]:
+              - link [ref=e732] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/electricgrill/ragex/r781000
+              - link "от 53 ,00 ƃ" [ref=e735] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/electricgrill/ragex/r781000/prices
+                - generic [ref=e736]: от
+                - generic [ref=e737]: "53"
+                - generic [ref=e738]: ",00 ƃ"
+              - link "от 1,56 р/мес" [ref=e740] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/electricgrill/ragex/r781000/prices?order=min_payment%3Aasc
+                - generic [ref=e741]: от 1,56 р/мес
+              - link "5 (1)" [ref=e742] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/electricgrill/ragex/r781000/reviews
+                - generic [ref=e745]: "5"
+                - generic [ref=e746]: (1)
+              - link "Электрогриль RAGEX R783-000" [ref=e748] [cursor=pointer]:
+                - /url: https://catalog.onliner.by/electricgrill/ragex/r781000
+          - button "Next slide" [ref=e749] [cursor=pointer]
+        - grid [ref=e751]:
+          - link "Apple iPhone 17 от 2700 ƃ" [ref=e753] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/search?q=%20Apple%20iPhone%2017&utm_source=mainpage&utm_medium=layer_images_small&utm_campaign=mobile&utm_content=apple
+            - generic [ref=e754]: Apple iPhone 17 от 2700 ƃ
+          - link "Apple AirPods от 12 ƃ /мес по Minipay" [ref=e757] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/headphones?is_by_parts=1&mfr%5B0%5D=apple&utm_source=mainpage&utm_medium=layer_images_small&utm_campaign=headphones&utm_content=apple
+            - generic [ref=e758]: Apple AirPods от 12 ƃ /мес по Minipay
+          - link "Летние шины от 63 ƃ" [ref=e761] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/tires?season_tires%5B0%5D=summer&season_tires%5Boperation%5D=union&order=price%3Aasc&utm_source=mainpage&utm_medium=layer_images_small&utm_campaign=tires&utm_content=tires
+            - generic [ref=e762]: Летние шины от 63 ƃ
+          - link "Ноутбуки Lenovo LOQ от 2691 ƃ" [ref=e765] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/notebook?mfr%5B0%5D=lenovo&note_category%5B0%5D=gamernote&note_category%5Boperation%5D=intersect&order=price%3Aasc&utm_source=mainpage&utm_medium=layer_images_small&utm_campaign=notebook&utm_content=lenovo
+            - generic [ref=e766]: Ноутбуки Lenovo LOQ от 2691 ƃ
+          - link "Игровые мониторы AOC от 335 ƃ" [ref=e769] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/display?mfr%5B0%5D=aoc&display_tags%5B0%5D=gaming144&display_tags%5Boperation%5D=intersect&order=price%3Aasc&utm_source=mainpage&utm_medium=layer_images_small&utm_campaign=display&utm_content=aoc
+            - generic [ref=e770]: Игровые мониторы AOC от 335 ƃ
+      - generic [ref=e772]:
+        - banner [ref=e773]:
+          - heading "Люди" [level=2] [ref=e774]:
+            - link "Люди" [ref=e775] [cursor=pointer]:
+              - /url: https://people.onliner.by
+          - link "RSS" [ref=e776] [cursor=pointer]:
+            - /url: https://people.onliner.by/feed
+          - link "Погода в Минске +11" [ref=e777] [cursor=pointer]:
+            - /url: https://pogoda.onliner.by
+            - generic "Погода в Минске" [ref=e778]
+            - text: "+11"
+        - list [ref=e779]:
+          - listitem [ref=e780]:
+            - link "Погода успокоилась, но ненадолго нет комментариев" [ref=e781] [cursor=pointer]:
+              - /url: https://people.onliner.by/2026/08/07/proxlada-i-solnce
+              - generic [ref=e782]:
+                - generic [ref=e783]: Погода успокоилась, но ненадолго
+                - generic [ref=e784]: нет комментариев
+          - listitem [ref=e786]:
+            - 'link "Джаз, «хвостатые» и культовая история любви: афиша на выходные нет комментариев" [ref=e787] [cursor=pointer]':
+              - /url: https://people.onliner.by/2026/08/07/dzhaz-xvostatye-i-kultovaya-istoriya-lyubvi-afisha-na-vyxodnye
+              - generic [ref=e788]:
+                - generic [ref=e789]: "Джаз, «хвостатые» и культовая история любви: афиша на выходные"
+                - generic [ref=e790]: нет комментариев
+          - listitem [ref=e792]:
+            - link "Личный вагон, первый Rolls-Royce, миллионы… Кем была последняя хозяйка гомельского дворца нет комментариев" [ref=e793] [cursor=pointer]:
+              - /url: https://people.onliner.by/2026/08/07/istoriya-xozyajki-gomelskogo-dvorca
+              - generic [ref=e794]:
+                - generic [ref=e795]: Личный вагон, первый Rolls-Royce, миллионы… Кем была последняя хозяйка гомельского дворца
+                - generic [ref=e796]: нет комментариев
+          - listitem [ref=e798]:
+            - link "«Собака насмерть загрызла кота во дворе». В соцсетях обсуждают резонансное видео из Серебрянки нет комментариев" [ref=e799] [cursor=pointer]:
+              - /url: https://people.onliner.by/2026/08/06/sobaka-nasmert-zagryzla-kota-vo-dvore-v-socsetyax-obsuzhdayut-rezonansnoe-video-iz-serebryanki
+              - generic [ref=e800]:
+                - generic [ref=e801]: «Собака насмерть загрызла кота во дворе». В соцсетях обсуждают резонансное видео из Серебрянки
+                - generic [ref=e802]: нет комментариев
+          - listitem [ref=e804]:
+            - link "С нового учебного года питание школьников изменится. Как? нет комментариев" [ref=e805] [cursor=pointer]:
+              - /url: https://people.onliner.by/2026/08/06/s-novogo-uchebnogo-goda-pitanie-shkolnikov-izmenitsya-kak
+              - generic [ref=e806]:
+                - generic [ref=e807]: С нового учебного года питание школьников изменится. Как?
+                - generic [ref=e808]: нет комментариев
+        - generic [ref=e810]:
+          - article [ref=e813]:
+            - figure [ref=e814]:
+              - link [ref=e815] [cursor=pointer]:
+                - /url: https://people.onliner.by/2026/08/08/arbuz-8
+              - generic [ref=e819]: Рецепт
+            - heading "Вы всю жизнь неправильно резали арбуз? Показываем 6 удобных способов" [level=2] [ref=e820]:
+              - link "Вы всю жизнь неправильно резали арбуз? Показываем 6 удобных способов" [ref=e821] [cursor=pointer]:
+                - /url: https://people.onliner.by/2026/08/08/arbuz-8
+            - generic [ref=e822]:
+              - generic [ref=e824]: 67 478
+              - generic [ref=e826]: 21 час назад
+            - paragraph [ref=e827]: "Если после нарезки арбуза приходится вытирать стол, доску и стенку холодильника, значит, пора менять привычку. В новом выпуске нашей кулинарной рубрики показываем шесть способов нарезать арбуз: от простых вариантов на каждый день до эффектной подачи для фуршета, корзинки с ручкой и ломтиков, как в турецких отелях."
+          - generic [ref=e829]:
+            - figure [ref=e830]:
+              - link [ref=e831] [cursor=pointer]:
+                - /url: https://people.onliner.by/2026/08/08/indiec-o-belorusax
+              - generic [ref=e835]: Спецпроект
+            - article [ref=e836]:
+              - generic [ref=e837]:
+                - link "Социум" [ref=e839] [cursor=pointer]:
+                  - /url: https://people.onliner.by/category/socium
+                - 'heading "«В первый день выглянул в окно и не понял: а где люди?!» Что удивляет индийца в Беларуси" [level=2] [ref=e840]':
+                  - 'link "«В первый день выглянул в окно и не понял: а где люди?!» Что удивляет индийца в Беларуси" [ref=e841] [cursor=pointer]':
+                    - /url: https://people.onliner.by/2026/08/08/indiec-o-belorusax
+                - generic [ref=e842]:
+                  - generic [ref=e844]: 20 132
+                  - generic [ref=e846]: 20 часов назад
+              - paragraph [ref=e848]: "«Иногда кажется, что белорусы считают: счастье нужно заслужить», — индиец из Минска Каран Паракх говорит это без осуждения — скорее с искренним удивлением. За 11 лет в Беларуси он успел выучить русский язык (и своим главным учителем во многом считает… актера Дмитрия Нагиева), открыть культурный центр, создать семью и почувствовать себя здесь своим. Но некоторые особенности нашей жизни для него до сих пор остаются загадкой."
+          - list [ref=e850]:
+            - listitem [ref=e851]:
+              - figure [ref=e852]:
+                - link [ref=e853] [cursor=pointer]:
+                  - /url: https://people.onliner.by/2026/08/08/dvoe-belorusskix-alpinistov-propali-v-gorax-v-kyrgyzstane
+              - generic [ref=e855]:
+                - heading "Двое белорусских альпинистов пропали в горах в Кыргызстане" [level=3] [ref=e856]:
+                  - link "Двое белорусских альпинистов пропали в горах в Кыргызстане" [ref=e857] [cursor=pointer]:
+                    - /url: https://people.onliner.by/2026/08/08/dvoe-belorusskix-alpinistov-propali-v-gorax-v-kyrgyzstane
+                - generic [ref=e858]:
+                  - generic [ref=e860]: "2267"
+                  - generic [ref=e862]: 7 часов назад
+            - listitem [ref=e863]:
+              - figure [ref=e864]:
+                - link [ref=e865] [cursor=pointer]:
+                  - /url: https://people.onliner.by/2026/08/08/didzhei-igrali-pryamo-iz-fury-vot-kak-proshla-gromkaya-vecherinka-vozle-nacionalnoj-biblioteki
+              - generic [ref=e867]:
+                - heading "Диджеи играли прямо из фуры. Вот как прошла громкая вечеринка возле Национальной библиотеки" [level=3] [ref=e868]:
+                  - link "Диджеи играли прямо из фуры. Вот как прошла громкая вечеринка возле Национальной библиотеки" [ref=e869] [cursor=pointer]:
+                    - /url: https://people.onliner.by/2026/08/08/didzhei-igrali-pryamo-iz-fury-vot-kak-proshla-gromkaya-vecherinka-vozle-nacionalnoj-biblioteki
+                - generic [ref=e870]:
+                  - generic [ref=e872]: "5882"
+                  - generic [ref=e874]: 18 часов назад
+            - listitem [ref=e875]:
+              - figure [ref=e876]:
+                - link [ref=e877] [cursor=pointer]:
+                  - /url: https://people.onliner.by/2026/08/07/vechernie-kostry-diskoteki-i-dazhe-tixij-chas-belorusov-zovut-v-detskij-lager-dlya-vzroslyx
+              - generic [ref=e879]:
+                - heading "«В день приходит по 250 заявок». Белорусов зовут в детский лагерь для взрослых" [level=3] [ref=e880]:
+                  - link "«В день приходит по 250 заявок». Белорусов зовут в детский лагерь для взрослых" [ref=e881] [cursor=pointer]:
+                    - /url: https://people.onliner.by/2026/08/07/vechernie-kostry-diskoteki-i-dazhe-tixij-chas-belorusov-zovut-v-detskij-lager-dlya-vzroslyx
+                - generic [ref=e882]:
+                  - generic [ref=e884]: 30 180
+                  - generic [ref=e886]: 1 день назад
+            - listitem [ref=e887]:
+              - figure [ref=e888]:
+                - link [ref=e889] [cursor=pointer]:
+                  - /url: https://people.onliner.by/2026/08/07/v-breste-dvuxletnyaya
+              - generic [ref=e891]:
+                - heading "В Бресте двухлетняя девочка выпала из окна четвертого этажа" [level=3] [ref=e892]:
+                  - link "В Бресте двухлетняя девочка выпала из окна четвертого этажа" [ref=e893] [cursor=pointer]:
+                    - /url: https://people.onliner.by/2026/08/07/v-breste-dvuxletnyaya
+                - generic [ref=e894]:
+                  - generic [ref=e896]: 11 369
+                  - generic [ref=e898]: 1 день назад
+        - contentinfo [ref=e899]:
+          - link "Все статьи о людях" [ref=e900] [cursor=pointer]:
+            - /url: https://people.onliner.by
+      - generic [ref=e901]:
+        - banner [ref=e902]:
+          - heading "Спорт" [level=2] [ref=e903]:
+            - link "Спорт" [ref=e904] [cursor=pointer]:
+              - /url: https://sport.onliner.by
+          - link "RSS" [ref=e905] [cursor=pointer]:
+            - /url: https://sport.onliner.by/feed
+        - list [ref=e906]:
+          - listitem [ref=e907]:
+            - link "В Беларуси шьют спортивную одежду для олимпийцев, но в магазинах вы ее вряд ли видели 7 комментариев за 2 дня" [ref=e908] [cursor=pointer]:
+              - /url: https://sport.onliner.by/2026/08/06/oraz
+              - generic [ref=e909]:
+                - generic [ref=e910]: В Беларуси шьют спортивную одежду для олимпийцев, но в магазинах вы ее вряд ли видели
+                - generic [ref=e911]: 7 комментариев за 2 дня
+          - listitem [ref=e913]:
+            - link "После 0:50 о них писал весь мир. Что сегодня происходит в футбольных Россонах? 22 комментария за 4 дня" [ref=e914] [cursor=pointer]:
+              - /url: https://sport.onliner.by/2026/08/04/rossony-futbol
+              - generic [ref=e915]:
+                - generic [ref=e916]: После 0:50 о них писал весь мир. Что сегодня происходит в футбольных Россонах?
+                - generic [ref=e917]: 22 комментария за 4 дня
+          - listitem [ref=e919]:
+            - link "Роналду впервые показал свой автопарк. В нем автомобили стоимостью в десятки миллионов 52 комментария за 2 дня" [ref=e920] [cursor=pointer]:
+              - /url: https://sport.onliner.by/2026/08/06/ronaldu-vpervye-pokazal-svoj-avtopark-v-nem-avtomobili-stoimostyu-v-desyatki-millionov
+              - generic [ref=e921]:
+                - generic [ref=e922]: Роналду впервые показал свой автопарк. В нем автомобили стоимостью в десятки миллионов
+                - generic [ref=e923]: 52 комментария за 2 дня
+          - listitem [ref=e925]:
+            - link "Белоруска прошла за сутки 150 тысяч шагов и получила солидное вознаграждение 46 комментариев за 1 день" [ref=e926] [cursor=pointer]:
+              - /url: https://sport.onliner.by/2026/08/07/beloruska-proshla-za-sutki-150-tysyach-shagov-i-poluchila-solidnoe-voznagrazhdenie
+              - generic [ref=e927]:
+                - generic [ref=e928]: Белоруска прошла за сутки 150 тысяч шагов и получила солидное вознаграждение
+                - generic [ref=e929]: 46 комментариев за 1 день
+          - listitem [ref=e931]:
+            - link "Опубликован список гостей свадьбы Криштиану Роналду 38 комментариев за 4 дня" [ref=e932] [cursor=pointer]:
+              - /url: https://sport.onliner.by/2026/08/04/v-internete-poyavilas-informaciya-kto-priglashen-na-svadbu-krishtianu-ronaldu
+              - generic [ref=e933]:
+                - generic [ref=e934]: Опубликован список гостей свадьбы Криштиану Роналду
+                - generic [ref=e935]: 38 комментариев за 4 дня
+        - generic [ref=e937]:
+          - article [ref=e940]:
+            - figure [ref=e941]:
+              - link [ref=e942] [cursor=pointer]:
+                - /url: https://sport.onliner.by/2026/08/07/bartlomej-kubkovskij-baltika
+            - heading "«Может быть летальный исход». Эксперты о спортсмене, переплывшем Балтийское море" [level=2] [ref=e944]:
+              - link "«Может быть летальный исход». Эксперты о спортсмене, переплывшем Балтийское море" [ref=e945] [cursor=pointer]:
+                - /url: https://sport.onliner.by/2026/08/07/bartlomej-kubkovskij-baltika
+            - generic [ref=e946]:
+              - generic [ref=e947]:
+                - generic [ref=e948]: 75 960
+                - link "36" [ref=e950] [cursor=pointer]:
+                  - /url: https://sport.onliner.by/comments/2026/08/07/bartlomej-kubkovskij-baltika?int_source=bubble_main_layer#comments
+                  - text: "36"
+              - generic [ref=e952]: 1 день назад
+            - paragraph [ref=e953]: "Главным спортивным героем недели можно смело назвать польского пловца Бартломея Кубковского: он стал первым человеком в истории, переплывшим Балтийское море. На это спортсмену понадобилось 55 часов без сна и отдыха, а также невероятная сила воли. Мы поговорили об уникальности этого достижения с профессиональным тренером по триатлону, а также узнали у врача спортивной медицины, насколько подобные подвиги опасны для здоровья."
+          - generic [ref=e955]:
+            - figure [ref=e956]:
+              - link [ref=e957] [cursor=pointer]:
+                - /url: https://sport.onliner.by/2026/08/08/test-chempion-po-detskomu-foto
+            - article [ref=e959]:
+              - generic [ref=e960]:
+                - link "Фан-зона" [ref=e962] [cursor=pointer]:
+                  - /url: https://sport.onliner.by/category/fanzona
+                - 'heading "Смотрите внимательно: эти дети стали олимпийскими чемпионами. Кто есть кто?" [level=2] [ref=e963]':
+                  - 'link "Смотрите внимательно: эти дети стали олимпийскими чемпионами. Кто есть кто?" [ref=e964] [cursor=pointer]':
+                    - /url: https://sport.onliner.by/go/29013?hash=eyJkYXRlIjoiMjAyNi0wOC0wNyAyMzoyNTowOCIsImluZGV4IjoyfQ%3D%3D
+                - generic [ref=e965]:
+                  - generic [ref=e967]: "6149"
+                  - generic [ref=e969]: 20 часов назад
+              - paragraph [ref=e971]: "Соскучились по нашим тестам? Тогда держите новый. На этот раз предлагаем проверить, насколько хорошо вы знаете белорусских олимпийских чемпионов. Но узнавать их придется не по кадрам с пьедесталов и спортивных арен, а по детским фотографиям. Правила нашей игры максимально просты: показываем снимок и предлагаем четыре варианта ответа. Ваша задача — угадать, кто из известных белорусских спортсменов смотрит на вас с экрана."
+          - list [ref=e973]:
+            - listitem [ref=e974]:
+              - figure [ref=e975]:
+                - link [ref=e976] [cursor=pointer]:
+                  - /url: https://sport.onliner.by/2026/08/08/umer-otec-lionelya-messi
+              - generic [ref=e978]:
+                - heading "Умер отец Лионеля Месси" [level=3] [ref=e979]:
+                  - link "Умер отец Лионеля Месси" [ref=e980] [cursor=pointer]:
+                    - /url: https://sport.onliner.by/2026/08/08/umer-otec-lionelya-messi
+                - generic [ref=e981]:
+                  - generic [ref=e983]: "6139"
+                  - generic [ref=e985]: 13 часов назад
+            - listitem [ref=e986]:
+              - figure [ref=e987]:
+                - link [ref=e988] [cursor=pointer]:
+                  - /url: https://sport.onliner.by/2026/08/08/eks-igrok-fk-molodechno-umer-v-31-god
+              - generic [ref=e990]:
+                - heading "Экс-игрок ФК «Молодечно» умер в 31 год" [level=3] [ref=e991]:
+                  - link "Экс-игрок ФК «Молодечно» умер в 31 год" [ref=e992] [cursor=pointer]:
+                    - /url: https://sport.onliner.by/2026/08/08/eks-igrok-fk-molodechno-umer-v-31-god
+                - generic [ref=e993]:
+                  - generic [ref=e995]: "7952"
+                  - generic [ref=e997]: 18 часов назад
+            - listitem [ref=e998]:
+              - figure [ref=e999]:
+                - link [ref=e1000] [cursor=pointer]:
+                  - /url: https://sport.onliner.by/2026/08/07/serxio-ramosu-uzhe-40-no-on-v-prekrasnoj-forme
+              - generic [ref=e1002]:
+                - heading "Серхио Рамосу уже 40, но он в прекрасной форме. Посмотрите на его тренировку" [level=3] [ref=e1003]:
+                  - link "Серхио Рамосу уже 40, но он в прекрасной форме. Посмотрите на его тренировку" [ref=e1004] [cursor=pointer]:
+                    - /url: https://sport.onliner.by/2026/08/07/serxio-ramosu-uzhe-40-no-on-v-prekrasnoj-forme
+                - generic [ref=e1005]:
+                  - generic [ref=e1006]:
+                    - generic [ref=e1007]: 10 313
+                    - link "14" [ref=e1009] [cursor=pointer]:
+                      - /url: https://sport.onliner.by/comments/2026/08/07/serxio-ramosu-uzhe-40-no-on-v-prekrasnoj-forme?int_source=bubble_main_layer#comments
+                      - text: "14"
+                  - generic [ref=e1011]: 1 день назад
+            - listitem [ref=e1012]:
+              - figure [ref=e1013]:
+                - link [ref=e1014] [cursor=pointer]:
+                  - /url: https://sport.onliner.by/2026/08/07/arina-sobolenko-prezentovala-naryad-v-kotorom-vystupit-na-us-open
+                - generic [ref=e1018]: UPD
+              - generic [ref=e1019]:
+                - heading "Новая форма Арины Соболенко вызвала много вопросов. Теннисистка ответила на критику" [level=3] [ref=e1020]:
+                  - link "Новая форма Арины Соболенко вызвала много вопросов. Теннисистка ответила на критику" [ref=e1021] [cursor=pointer]:
+                    - /url: https://sport.onliner.by/2026/08/07/arina-sobolenko-prezentovala-naryad-v-kotorom-vystupit-na-us-open
+                - generic [ref=e1022]:
+                  - generic [ref=e1023]:
+                    - generic [ref=e1024]: 47 888
+                    - link "11" [ref=e1026] [cursor=pointer]:
+                      - /url: https://sport.onliner.by/comments/2026/08/07/arina-sobolenko-prezentovala-naryad-v-kotorom-vystupit-na-us-open?int_source=bubble_main_layer#comments
+                      - text: "11"
+                  - generic [ref=e1028]: 1 день назад
+        - contentinfo [ref=e1029]:
+          - link "Все новости о спорте" [ref=e1030] [cursor=pointer]:
+            - /url: https://sport.onliner.by
+      - generic [ref=e1031]:
+        - banner [ref=e1037]:
+          - heading [level=2] [ref=e1038]:
+            - link:
+              - /url: "https://betera-promo.by/tM6ty4cD?t_group=media&utm_source=media_onliner&campaign_name={campaign_name}&utm_medium=cpm&utm_content=logo"
+          - generic [ref=e1041]:
+            - link "Новости":
+              - /url: javascript:void(0);
+            - link "Футбол" [ref=e1042] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Теннис" [ref=e1043] [cursor=pointer]:
+              - /url: javascript:void(0);
+        - generic [ref=e1044]:
+          - grid [ref=e1047]:
+            - generic [ref=e1048]:
+              - link "«Директ завален, семья плачет, а я как во сне» Этот белорус стал чемпионом мира по муай-тай" [ref=e1052] [cursor=pointer]:
+                - /url: https://people.onliner.by/2026/07/29/perspektivnye-muaj-taj
+                - generic [ref=e1053]: «Директ завален, семья плачет, а я как во сне»
+                - paragraph [ref=e1054]: Этот белорус стал чемпионом мира по муай-тай
+              - link "И времени не хватало, и денег Это не помешало маме вырастить топового спортсмена" [ref=e1058] [cursor=pointer]:
+                - /url: https://sport.onliner.by/2026/07/22/gandbol-kulesh
+                - generic [ref=e1059]: И времени не хватало, и денег
+                - paragraph [ref=e1060]: Это не помешало маме вырастить топового спортсмена
+            - link "«Мама, не плакать!» История Антона Смольского" [ref=e1065] [cursor=pointer]:
+              - /url: https://sport.onliner.by/2026/06/24/anton-smolskij
+              - generic [ref=e1066]: «Мама, не плакать!»
+              - paragraph [ref=e1067]: История Антона Смольского
+            - link "Белорусские футболисты на ЧМ Вспоминаем этих счастливчиков" [ref=e1072] [cursor=pointer]:
+              - /url: https://people.onliner.by/2026/06/10/belorusy-na-chm-po-futbolu
+              - generic [ref=e1073]: Белорусские футболисты на ЧМ
+              - paragraph [ref=e1074]: Вспоминаем этих счастливчиков
+          - link "БОНУС 1000 BYN + 1000 FS" [ref=e1076] [cursor=pointer]:
+            - /url: "https://betera-promo.by/tM6ty4cD?t_group=media&utm_source=media_onliner&campaign_name={campaign_name}&utm_medium=cpm&utm_content=button"
+      - generic [ref=e1077]:
+        - banner [ref=e1078]:
+          - heading "Каталог Onlíner рекомендует" [level=2] [ref=e1079]
+        - grid [ref=e1081]:
+          - generic [ref=e1082]:
+            - link "Хиты сезона со скидкой До - 20 % на популярные смартфоны" [ref=e1085] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/mobile?on_sale=1&utm_source=mainpage&utm_medium=layer2&utm_campaign=mobile&utm_content=mobile
+              - generic [ref=e1086]: Хиты сезона со скидкой
+              - paragraph [ref=e1087]: До - 20 % на популярные смартфоны
+            - link "Беспроводные наушники Заказывайте хиты продаж в Каталоге" [ref=e1090] [cursor=pointer]:
+              - /url: https://catalog.onliner.by/headphones?wireless=1&utm_source=mainpage&utm_medium=layer2&utm_campaign=headphones&utm_content=headphones
+              - generic [ref=e1091]: Беспроводные наушники
+              - paragraph [ref=e1092]: Заказывайте хиты продаж в Каталоге
+          - link "Телевизоры 4К Со скидкой до - 31% в Каталоге" [ref=e1096] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/tv?on_sale=1&tv_category%5B0%5D=tv4k&tv_category%5Boperation%5D=intersect
+            - generic [ref=e1097]: Телевизоры 4К
+            - paragraph [ref=e1098]: Со скидкой до - 31% в Каталоге
+          - link "Железо для ПК До - 70% в Каталоге Onliner" [ref=e1102] [cursor=pointer]:
+            - /url: https://catalog.onliner.by/promo/kupit-pk
+            - generic [ref=e1103]: Железо для ПК
+            - paragraph [ref=e1104]: До - 70% в Каталоге Onliner
+      - generic [ref=e1106]:
+        - banner [ref=e1107]:
+          - heading "Кошелек" [level=2] [ref=e1108]:
+            - link "Кошелек" [ref=e1109] [cursor=pointer]:
+              - /url: https://money.onliner.by
+          - link "RSS" [ref=e1110] [cursor=pointer]:
+            - /url: https://money.onliner.by/feed
+          - link "$ 2,9386" [ref=e1111] [cursor=pointer]:
+            - /url: https://kurs.onliner.by/
+        - list [ref=e1112]:
+          - listitem [ref=e1113]:
+            - link "В Минске открылся магазин нового формата «Хит! Дисконт» нет комментариев" [ref=e1114] [cursor=pointer]:
+              - /url: https://money.onliner.by/2026/08/07/v-minske-otkrylsya-magazin
+              - generic [ref=e1115]:
+                - generic [ref=e1116]: В Минске открылся магазин нового формата «Хит! Дисконт»
+                - generic [ref=e1117]: нет комментариев
+          - listitem [ref=e1119]:
+            - link "«Выгоднее в магазинах, но души-то там нет». Наш репортаж с рынка в райцентре нет комментариев" [ref=e1120] [cursor=pointer]:
+              - /url: https://money.onliner.by/2026/08/06/on-ne-to-chtoby-deshevyj-a-edinstvennyj-posmotreli-chem-zhivet-rynok-v-rajcentre
+              - generic [ref=e1121]:
+                - generic [ref=e1122]: «Выгоднее в магазинах, но души-то там нет». Наш репортаж с рынка в райцентре
+                - generic [ref=e1123]: нет комментариев
+          - listitem [ref=e1125]:
+            - link "Остерегайтесь формулы «дети помогут». Что нужно делать после 40 для безбедной старости нет комментариев" [ref=e1126] [cursor=pointer]:
+              - /url: https://money.onliner.by/2026/08/06/bogataya-starost-ili-chto-delat-chtoby-ne-ostatsya-k-pensii-na-bobax
+              - generic [ref=e1127]:
+                - generic [ref=e1128]: Остерегайтесь формулы «дети помогут». Что нужно делать после 40 для безбедной старости
+                - generic [ref=e1129]: нет комментариев
+          - listitem [ref=e1131]:
+            - link "Вложил $17 тысяч по совету родственника. Вернуть деньги не помогли ни милиция, ни суд нет комментариев" [ref=e1132] [cursor=pointer]:
+              - /url: https://money.onliner.by/2026/08/05/poslushal-sovet-brata
+              - generic [ref=e1133]:
+                - generic [ref=e1134]: Вложил $17 тысяч по совету родственника. Вернуть деньги не помогли ни милиция, ни суд
+                - generic [ref=e1135]: нет комментариев
+          - listitem [ref=e1137]:
+            - link "«К голодным временам отношусь философски». Она отказалась от карьеры, чтобы шить игрушки нет комментариев" [ref=e1138] [cursor=pointer]:
+              - /url: https://money.onliner.by/2026/08/04/shite-zyuzikov
+              - generic [ref=e1139]:
+                - generic [ref=e1140]: «К голодным временам отношусь философски». Она отказалась от карьеры, чтобы шить игрушки
+                - generic [ref=e1141]: нет комментариев
+        - generic [ref=e1143]:
+          - article [ref=e1146]:
+            - figure [ref=e1147]:
+              - link [ref=e1148] [cursor=pointer]:
+                - /url: https://money.onliner.by/2026/08/07/franshiza-kiberklub
+            - heading "«Вложили 650 тысяч — и все равно сами махали там тряпками». Стоит ли этот бизнес таких денег?" [level=2] [ref=e1150]:
+              - link "«Вложили 650 тысяч — и все равно сами махали там тряпками». Стоит ли этот бизнес таких денег?" [ref=e1151] [cursor=pointer]:
+                - /url: https://money.onliner.by/2026/08/07/franshiza-kiberklub
+            - generic [ref=e1152]:
+              - generic [ref=e1154]: 27 788
+              - generic [ref=e1156]: 1 день назад
+            - paragraph [ref=e1157]: Алексей и Павел не были геймерами и никогда не мечтали открыть киберклуб. У каждого был свой бизнес, но однажды они решили рискнуть и зайти в новую для себя сферу. Предприниматели взяли франшизу, столкнулись с жесткими требованиями, дорогим ремонтом и в какой-то момент сами собирали мебель по ночам. Сначала планировали вложить 520 тыс. рублей — в итоге потратили почти на треть больше. Их опыт и изнанка бизнеса — в этом материале.
+          - generic [ref=e1159]:
+            - figure [ref=e1160]:
+              - link [ref=e1161] [cursor=pointer]:
+                - /url: https://money.onliner.by/2026/08/08/bill-benter
+            - article [ref=e1163]:
+              - generic [ref=e1164]:
+                - link "Как заработать" [ref=e1166] [cursor=pointer]:
+                  - /url: https://money.onliner.by/category/kak-zarabotat
+                - heading "Мужчина придумал алгоритм, как обыгрывать букмекеров, и законно заработал миллиард долларов" [level=2] [ref=e1167]:
+                  - link "Мужчина придумал алгоритм, как обыгрывать букмекеров, и законно заработал миллиард долларов" [ref=e1168] [cursor=pointer]:
+                    - /url: https://money.onliner.by/2026/08/08/bill-benter
+                - generic [ref=e1169]:
+                  - generic [ref=e1171]: 18 139
+                  - generic [ref=e1173]: 20 часов назад
+              - paragraph [ref=e1175]: В марте 2002 года издание Wired опубликовало большой материал, в котором рассказало, как игроки с математическим образованием и собственными компьютерными моделями превратили ставки на скачки в предсказуемый источник дохода. Главным, хотя и самым скрытным героем той давней статьи был Билл Бентер, умудрившийся за 40 лет сделать невозможное и заработать таким образом около миллиарда долларов.
+          - list [ref=e1177]:
+            - listitem [ref=e1178]:
+              - figure [ref=e1179]:
+                - link [ref=e1180] [cursor=pointer]:
+                  - /url: https://money.onliner.by/2026/08/07/krupnye-torgovye-seti
+              - generic [ref=e1182]:
+                - heading "Крупные торговые сети придут в деревни. Главное о новом эксперименте" [level=3] [ref=e1183]:
+                  - link "Крупные торговые сети придут в деревни. Главное о новом эксперименте" [ref=e1184] [cursor=pointer]:
+                    - /url: https://money.onliner.by/2026/08/07/krupnye-torgovye-seti
+                - generic [ref=e1185]:
+                  - generic [ref=e1187]: 15 962
+                  - generic [ref=e1189]: 1 день назад
+            - listitem [ref=e1190]:
+              - figure [ref=e1191]:
+                - link [ref=e1192] [cursor=pointer]:
+                  - /url: https://money.onliner.by/2026/08/07/skidka-vyxodnyx-ryukzaki-na-kotorye-stoit-obratit-vnimanie-pryamo-sejchas
+                - generic [ref=e1196]: Каталог Onlíner
+              - generic [ref=e1197]:
+                - 'heading "Скидка выходных: рюкзаки, на которые стоит обратить внимание прямо сейчас" [level=3] [ref=e1198]':
+                  - 'link "Скидка выходных: рюкзаки, на которые стоит обратить внимание прямо сейчас" [ref=e1199] [cursor=pointer]':
+                    - /url: https://money.onliner.by/2026/08/07/skidka-vyxodnyx-ryukzaki-na-kotorye-stoit-obratit-vnimanie-pryamo-sejchas
+                - generic [ref=e1200]:
+                  - generic [ref=e1202]: "4574"
+                  - generic [ref=e1204]: 1 день назад
+            - listitem [ref=e1205]:
+              - figure [ref=e1206]:
+                - link [ref=e1207] [cursor=pointer]:
+                  - /url: https://money.onliner.by/2026/08/07/pensioner-sfotografiroval-kurera
+              - generic [ref=e1209]:
+                - heading "120 тысяч рублей чуть не оказались у мошенников. Помогла одна фотография" [level=3] [ref=e1210]:
+                  - link "120 тысяч рублей чуть не оказались у мошенников. Помогла одна фотография" [ref=e1211] [cursor=pointer]:
+                    - /url: https://money.onliner.by/2026/08/07/pensioner-sfotografiroval-kurera
+                - generic [ref=e1212]:
+                  - generic [ref=e1214]: 10 132
+                  - generic [ref=e1216]: 1 день назад
+            - listitem [ref=e1217]:
+              - figure [ref=e1218]:
+                - link [ref=e1219] [cursor=pointer]:
+                  - /url: https://money.onliner.by/2026/08/07/belorus-prodaval-bilety-na
+                - generic [ref=e1223]: UPD
+              - generic [ref=e1224]:
+                - heading "Белорус продавал билеты на несуществующие матчи. Как его наказали?" [level=3] [ref=e1225]:
+                  - link "Белорус продавал билеты на несуществующие матчи. Как его наказали?" [ref=e1226] [cursor=pointer]:
+                    - /url: https://money.onliner.by/2026/08/07/belorus-prodaval-bilety-na
+                - generic [ref=e1227]:
+                  - generic [ref=e1229]: "7551"
+                  - generic [ref=e1231]: 1 день назад
+        - contentinfo [ref=e1232]:
+          - link "Все новости о финансах" [ref=e1233] [cursor=pointer]:
+            - /url: https://money.onliner.by
+      - generic [ref=e1234]:
+        - banner [ref=e1235]:
+          - heading "Авто" [level=2] [ref=e1236]:
+            - link "Авто" [ref=e1237] [cursor=pointer]:
+              - /url: https://auto.onliner.by
+          - link "RSS" [ref=e1238] [cursor=pointer]:
+            - /url: https://auto.onliner.by/feed
+        - list [ref=e1239]:
+          - listitem [ref=e1240]:
+            - link "Таксист чуть не сбил человека, который вышел из трамвая. Видео и реакция ГАИ 69 комментариев за 1 день" [ref=e1241] [cursor=pointer]:
+              - /url: https://auto.onliner.by/2026/08/07/taksist-ostanovilsya
+              - generic [ref=e1242]:
+                - generic [ref=e1243]: Таксист чуть не сбил человека, который вышел из трамвая. Видео и реакция ГАИ
+                - generic [ref=e1244]: 69 комментариев за 1 день
+          - listitem [ref=e1246]:
+            - link "Каршеринг против кикшеринга на переходе. Кто прав? нет комментариев" [ref=e1247] [cursor=pointer]:
+              - /url: https://auto.onliner.by/2026/08/07/karshering-protiv-kiksheringa
+              - generic [ref=e1248]:
+                - generic [ref=e1249]: Каршеринг против кикшеринга на переходе. Кто прав?
+                - generic [ref=e1250]: нет комментариев
+          - listitem [ref=e1252]:
+            - link "Спортивный тренер погиб во время велосипедной тренировки нет комментариев" [ref=e1253] [cursor=pointer]:
+              - /url: https://auto.onliner.by/2026/08/06/trener-pogib
+              - generic [ref=e1254]:
+                - generic [ref=e1255]: Спортивный тренер погиб во время велосипедной тренировки
+                - generic [ref=e1256]: нет комментариев
+          - listitem [ref=e1258]:
+            - link "«Кто однажды впервые купил Toyota, тот ездит на ней пожизненно». Во Владике знают 125 комментариев за 2 дня" [ref=e1259] [cursor=pointer]:
+              - /url: https://auto.onliner.by/2026/08/06/pravo-rulya
+              - generic [ref=e1260]:
+                - generic [ref=e1261]: «Кто однажды впервые купил Toyota, тот ездит на ней пожизненно». Во Владике знают
+                - generic [ref=e1262]: 125 комментариев за 2 дня
+          - listitem [ref=e1264]:
+            - link "«Стоим уже 15 часов. Из 28 автобусов 17 — пустые». Что сейчас происходит в очередях на границе? нет комментариев" [ref=e1265] [cursor=pointer]:
+              - /url: https://auto.onliner.by/2026/08/04/chto-proisxodit-v-ocheredyax
+              - generic [ref=e1266]:
+                - generic [ref=e1267]: «Стоим уже 15 часов. Из 28 автобусов 17 — пустые». Что сейчас происходит в очередях на границе?
+                - generic [ref=e1268]: нет комментариев
+        - generic [ref=e1270]:
+          - article [ref=e1273]:
+            - figure [ref=e1274]:
+              - link [ref=e1275] [cursor=pointer]:
+                - /url: https://auto.onliner.by/2026/08/08/kak-uluchshit-zvuk-v-avtomobile
+              - generic [ref=e1279]: ГАЙД
+            - heading "Хотите хороший звук в машине? Вот с чего эксперты советуют начать" [level=2] [ref=e1280]:
+              - link "Хотите хороший звук в машине? Вот с чего эксперты советуют начать" [ref=e1281] [cursor=pointer]:
+                - /url: https://auto.onliner.by/2026/08/08/kak-uluchshit-zvuk-v-avtomobile
+            - generic [ref=e1282]:
+              - generic [ref=e1284]: 23 819
+              - generic [ref=e1286]: 21 час назад
+            - paragraph [ref=e1287]: Перед тем как начать выбирать динамики, эксперты советуют определиться, какую музыку вы будете слушать в автомобиле. Если в салоне чаще будет звучать электронная музыка, то к «акустическому вопросу» следует подходить иначе, нежели в случае, когда вы предпочитаете рок или творчество поп-исполнителей. И дело здесь не только в басах, как может показаться на первый взгляд.
+          - generic [ref=e1289]:
+            - figure [ref=e1290]:
+              - link [ref=e1291] [cursor=pointer]:
+                - /url: https://auto.onliner.by/2026/08/08/pervuyu-zabyt-nevozmozhno
+            - article [ref=e1293]:
+              - generic [ref=e1294]:
+                - link "Подержанные авто" [ref=e1296] [cursor=pointer]:
+                  - /url: https://auto.onliner.by/category/poderzhannye-avto
+                - heading "Первую забыть невозможно? Читатели Onlíner вспоминают машины, на которых учились ездить" [level=2] [ref=e1297]:
+                  - link "Первую забыть невозможно? Читатели Onlíner вспоминают машины, на которых учились ездить" [ref=e1298] [cursor=pointer]:
+                    - /url: https://auto.onliner.by/go/1259982?hash=eyJkYXRlIjoiMjAyNi0wOC0wOCAwMTowMzo1NiIsImluZGV4IjowfQ%3D%3D
+                - generic [ref=e1299]:
+                  - generic [ref=e1300]:
+                    - generic [ref=e1301]: 14 496
+                    - link "23" [ref=e1303] [cursor=pointer]:
+                      - /url: https://auto.onliner.by/comments/2026/08/08/pervuyu-zabyt-nevozmozhno?int_source=bubble_main_layer#comments
+                      - text: "23"
+                  - generic [ref=e1305]: 20 часов назад
+              - paragraph [ref=e1307]: Еще одна подборка конкурсных историй от наших читателей на тему «Моя первая тачка» — и начинаем определять победителей! Первые рассказы можно почитать по ссылке, а сегодня переходим к следующей партии ностальгии. Кто заберет приз — билеты на фестиваль «Тачки Пiкнiк — 2026»? Может, бывший владелец редкого FIAT Pininfarina Coupé? Или пара с «Пассатом-паласатом»? Ну а если ваши сердца будут отданы семейному ВАЗ-21013 или девушке на Renault Megane — обязательно сообщите об этом в комментариях.
+          - list [ref=e1309]:
+            - listitem [ref=e1310]:
+              - figure [ref=e1311]:
+                - link [ref=e1312] [cursor=pointer]:
+                  - /url: https://auto.onliner.by/2026/08/08/ne-dozhdalsya-poka-projdut-vse-peshexody-i-sbil-zhenshhinu-video-dtp-iz-minska
+              - generic [ref=e1314]:
+                - heading "Не дождался, пока пройдут все пешеходы, и сбил женщину. Видео ДТП из Минска" [level=3] [ref=e1315]:
+                  - link "Не дождался, пока пройдут все пешеходы, и сбил женщину. Видео ДТП из Минска" [ref=e1316] [cursor=pointer]:
+                    - /url: https://auto.onliner.by/2026/08/08/ne-dozhdalsya-poka-projdut-vse-peshexody-i-sbil-zhenshhinu-video-dtp-iz-minska
+                - generic [ref=e1317]:
+                  - generic [ref=e1319]: "2321"
+                  - generic [ref=e1321]: 6 часов назад
+            - listitem [ref=e1322]:
+              - figure [ref=e1323]:
+                - link [ref=e1324] [cursor=pointer]:
+                  - /url: https://auto.onliner.by/2026/08/08/ne-predostavil-preimushhestvo-motociklu-22-letnij-bajker-pogib-posle-stolknoveniya-s-kamazom
+              - generic [ref=e1326]:
+                - heading "«Не предоставил преимущество мотоциклу». Мотоциклист погиб после столкновения с КамАЗом" [level=3] [ref=e1327]:
+                  - link "«Не предоставил преимущество мотоциклу». Мотоциклист погиб после столкновения с КамАЗом" [ref=e1328] [cursor=pointer]:
+                    - /url: https://auto.onliner.by/2026/08/08/ne-predostavil-preimushhestvo-motociklu-22-letnij-bajker-pogib-posle-stolknoveniya-s-kamazom
+                - generic [ref=e1329]:
+                  - generic [ref=e1331]: 23 932
+                  - generic [ref=e1333]: 17 часов назад
+            - listitem [ref=e1334]:
+              - figure [ref=e1335]:
+                - link [ref=e1336] [cursor=pointer]:
+                  - /url: https://auto.onliner.by/2026/08/08/bajker-iz-minska-reshil-poxvatatsya-svoimi-dinamikami-vo-dvore-zhilogo-doma-ponravilos-ne-vsem
+              - generic [ref=e1338]:
+                - heading "Байкер из Минска решил похвататься своими динамиками во дворе жилого дома. Понравилось не всем" [level=3] [ref=e1339]:
+                  - link "Байкер из Минска решил похвататься своими динамиками во дворе жилого дома. Понравилось не всем" [ref=e1340] [cursor=pointer]:
+                    - /url: https://auto.onliner.by/2026/08/08/bajker-iz-minska-reshil-poxvatatsya-svoimi-dinamikami-vo-dvore-zhilogo-doma-ponravilos-ne-vsem
+                - generic [ref=e1341]:
+                  - generic [ref=e1343]: 24 425
+                  - generic [ref=e1345]: 17 часов назад
+            - listitem [ref=e1346]:
+              - figure [ref=e1347]:
+                - link [ref=e1348] [cursor=pointer]:
+                  - /url: https://auto.onliner.by/2026/08/07/shtrafov-na-stekle
+              - generic [ref=e1350]:
+                - 'heading "Штрафов на стекле больше не будет: как узнать о нарушении парковки?" [level=3] [ref=e1351]':
+                  - 'link "Штрафов на стекле больше не будет: как узнать о нарушении парковки?" [ref=e1352] [cursor=pointer]':
+                    - /url: https://auto.onliner.by/2026/08/07/shtrafov-na-stekle
+                - generic [ref=e1353]:
+                  - generic [ref=e1355]: "6398"
+                  - generic [ref=e1357]: 1 день назад
+        - contentinfo [ref=e1358]:
+          - link "Все новости об автомобилях" [ref=e1359] [cursor=pointer]:
+            - /url: https://auto.onliner.by
+      - generic [ref=e1361]:
+        - generic [ref=e1363]:
+          - generic [ref=e1364]:
+            - link "Автобарахолка" [ref=e1365] [cursor=pointer]:
+              - /url: https://ab.onliner.by/?utm_source=onliner&utm_medium=main_page&utm_content=listing
+            - link "Разместить объявление" [ref=e1366] [cursor=pointer]:
+              - /url: https://ab.onliner.by/create?utm_source=onliner&utm_medium=main_page&utm_content=create
+          - generic [ref=e1368]:
+            - generic [ref=e1369]: "или найти себе авто:"
+            - generic [ref=e1370]:
+              - combobox [ref=e1371] [cursor=pointer]:
+                - option "Все марки" [selected]
+                - option "Acura"
+                - option "AION"
+                - option "Alfa Romeo"
+                - option "Alpina"
+                - option "Audi"
+                - option "Avatr"
+                - option "BAIC"
+                - option "Barkas"
+                - option "BelGee"
+                - option "Bentley"
+                - option "BMW"
+                - option "Buick"
+                - option "BYD"
+                - option "Cadillac"
+                - option "Changan"
+                - option "Chery"
+                - option "Chevrolet"
+                - option "Chrysler"
+                - option "Citroen"
+                - option "Cupra"
+                - option "Dacia"
+                - option "Daewoo"
+                - option "Daihatsu"
+                - option "Datsun"
+                - option "Deepal"
+                - option "DFSK"
+                - option "Dodge"
+                - option "DongFeng"
+                - option "Dongfeng Honda"
+                - option "DS"
+                - option "Exeed"
+                - option "Farizon"
+                - option "FAW"
+                - option "Fiat"
+                - option "Ford"
+                - option "GAC"
+                - option "Geely"
+                - option "Genesis"
+                - option "GMC"
+                - option "Great Wall"
+                - option "Hafei"
+                - option "Haval"
+                - option "Hedmos"
+                - option "Honda"
+                - option "Hongqi"
+                - option "Hyundai"
+                - option "Infiniti"
+                - option "Iran Khodro"
+                - option "Isuzu"
+                - option "IVECO"
+                - option "JAC"
+                - option "Jaguar"
+                - option "Jeep"
+                - option "Jetour"
+                - option "Kia"
+                - option "LADA"
+                - option "Lancia"
+                - option "Land Rover"
+                - option "Leapmotor"
+                - option "Lexus"
+                - option "Lifan"
+                - option "Lincoln"
+                - option "LiXiang"
+                - option "Lucid"
+                - option "Lynk & Co"
+                - option "Maserati"
+                - option "Mazda"
+                - option "Mercedes-Benz"
+                - option "MG"
+                - option "Mini"
+                - option "Mitsubishi"
+                - option "Nio"
+                - option "Nissan"
+                - option "Oldsmobile"
+                - option "Opel"
+                - option "Ora"
+                - option "Peugeot"
+                - option "Polestar"
+                - option "Pontiac"
+                - option "Porsche"
+                - option "Ravon"
+                - option "Renault"
+                - option "Renault Samsung"
+                - option "Roewe"
+                - option "Rover"
+                - option "Ruichi"
+                - option "Saab"
+                - option "Scion"
+                - option "Seat"
+                - option "Shenlan"
+                - option "Skoda"
+                - option "Skywell"
+                - option "Smart"
+                - option "SsangYong"
+                - option "Subaru"
+                - option "Suzuki"
+                - option "Tank"
+                - option "Tesla"
+                - option "Toyota"
+                - option "Vauxhall"
+                - option "Volkswagen"
+                - option "Volvo"
+                - option "Vortex"
+                - option "Voyah"
+                - option "Weltmeister"
+                - option "Xiaomi"
+                - option "Xpeng"
+                - option "Zeekr"
+                - option "ВАЗ"
+                - option "ГАЗ"
+                - option "Ё-мобиль"
+                - option "ЗАЗ"
+                - option "Москвич"
+                - option "ТагАЗ"
+                - option "УАЗ"
+              - generic [ref=e1373]: Все марки
+            - generic [ref=e1374]:
+              - combobox [disabled] [ref=e1375]:
+                - option "Все модели" [selected]
+              - generic [ref=e1377]: Все модели
+            - generic [ref=e1378]:
+              - combobox [ref=e1379] [cursor=pointer]:
+                - option "Любая цена" [selected]
+                - option "до 2000 р."
+                - option "до 4000 р."
+                - option "до 6000 р."
+                - option "до 8000 р."
+                - option "до 10 000 р."
+                - option "до 14 000 р."
+                - option "до 18 000 р."
+                - option "до 22 000 р."
+                - option "до 26 000 р."
+                - option "до 30 000 р."
+                - option "до 40 000 р."
+                - option "до 50 000 р."
+                - option "до 60 000 р."
+                - option "до 70 000 р."
+                - option "до 80 000 р."
+                - option "до 90 000 р."
+                - option "до 100 000 р."
+                - option "до 120 000 р."
+                - option "до 140 000 р."
+                - option "до 160 000 р."
+                - option "до 180 000 р."
+                - option "до 200 000 р."
+              - generic [ref=e1381]: Любая цена
+            - link "Найти" [ref=e1382] [cursor=pointer]:
+              - /url: "#"
+        - grid [ref=e1383]:
+          - generic [ref=e1385]:
+            - link "Nissan Sentra VIII (B18) SR 2020, 107 000 км, синий, седан, бензин 2 л, автоматическая, передний привод, Гомель" [ref=e1386] [cursor=pointer]:
+              - /url: https://ab.onliner.by/nissan/sentra/5069942?utm_source=onliner&utm_medium=main_page&utm_content=ad
+              - heading "Nissan Sentra VIII (B18) SR" [level=3] [ref=e1387]
+              - paragraph [ref=e1388]: 2020, 107 000 км, синий, седан, бензин 2 л, автоматическая, передний привод, Гомель
+            - generic [ref=e1389]:
+              - generic [ref=e1390]: Nissan Sentra VIII (B18) SR
+              - generic [ref=e1391]: 2020, 107 000 км, синий, седан, бензин 2 л, автоматическая, передний привод, Гомель
+            - link "43 785 р." [ref=e1392] [cursor=pointer]:
+              - /url: https://ab.onliner.by/nissan/sentra/5069942?utm_source=onliner&utm_medium=main_page&utm_content=ad
+              - generic [ref=e1393]: 43 785 р.
+          - generic [ref=e1396]:
+            - generic [ref=e1397]:
+              - link "FAW Bestune B70 (III) 2024, 31 750 км" [ref=e1398] [cursor=pointer]:
+                - /url: https://ab.onliner.by/faw/bestune-b70/5069270?utm_source=onliner&utm_medium=main_page&utm_content=ad
+                - heading "FAW Bestune B70 (III)" [level=3] [ref=e1399]
+                - paragraph [ref=e1400]: 2024, 31 750 км
+              - link "65 384 р." [ref=e1401] [cursor=pointer]:
+                - /url: https://ab.onliner.by/faw/bestune-b70/5069270?utm_source=onliner&utm_medium=main_page&utm_content=ad
+                - generic [ref=e1402]: 65 384 р.
+            - generic [ref=e1405]:
+              - link "Volkswagen Jetta (VII) Рестайлинг 2024, 200 км" [ref=e1406] [cursor=pointer]:
+                - /url: https://ab.onliner.by/volkswagen/jetta/5070070?utm_source=onliner&utm_medium=main_page&utm_content=ad
+                - heading "Volkswagen Jetta (VII) Рестайлинг" [level=3] [ref=e1407]
+                - paragraph [ref=e1408]: 2024, 200 км
+              - link "64 061 р." [ref=e1409] [cursor=pointer]:
+                - /url: https://ab.onliner.by/volkswagen/jetta/5070070?utm_source=onliner&utm_medium=main_page&utm_content=ad
+                - generic [ref=e1410]: 64 061 р.
+          - generic [ref=e1413]:
+            - generic [ref=e1414]:
+              - link "Farizon SuperVAN (I) 430 км 2026, новый" [ref=e1415] [cursor=pointer]:
+                - /url: https://ab.onliner.by/farizon/supervan/5012250?utm_source=onliner&utm_medium=main_page&utm_content=ad
+                - heading "Farizon SuperVAN (I) 430 км" [level=3] [ref=e1416]
+                - paragraph [ref=e1417]: 2026, новый
+              - link "104 614 р." [ref=e1418] [cursor=pointer]:
+                - /url: https://ab.onliner.by/farizon/supervan/5012250?utm_source=onliner&utm_medium=main_page&utm_content=ad
+                - generic [ref=e1419]: 104 614 р.
+            - generic [ref=e1422]:
+              - link "Triumph Bonneville 2012, 18 990 км" [ref=e1423] [cursor=pointer]:
+                - /url: https://mb.onliner.by/moto/216152
+                - heading "Triumph Bonneville" [level=3] [ref=e1424]
+                - paragraph [ref=e1425]: 2012, 18 990 км
+              - link "15 868 р." [ref=e1426] [cursor=pointer]:
+                - /url: https://mb.onliner.by/moto/216152
+                - generic [ref=e1427]: 15 868 р.
+        - generic [ref=e1431]:
+          - text: Выбирайте из
+          - link "9139 объявлений на Автобарахолке" [ref=e1432] [cursor=pointer]:
+            - /url: https://ab.onliner.by/?utm_source=onliner&utm_medium=main_page&utm_content=listing
+          - text: и
+          - link "321 объявления на Мотобарахолке" [ref=e1433] [cursor=pointer]:
+            - /url: https://mb.onliner.by
+      - generic [ref=e1434]:
+        - banner [ref=e1435]:
+          - heading "Технологии" [level=2] [ref=e1436]:
+            - link "Технологии" [ref=e1437] [cursor=pointer]:
+              - /url: https://tech.onliner.by
+          - link "RSS" [ref=e1438] [cursor=pointer]:
+            - /url: https://tech.onliner.by/feed
+        - list [ref=e1439]:
+          - listitem [ref=e1440]:
+            - 'link "Белорус несколько лет платил за интернет с 200 Мбит/с: «Я получал в два раза меньше» 238 комментариев за 2 дня" [ref=e1441] [cursor=pointer]':
+              - /url: https://tech.onliner.by/2026/08/06/belorus-neskolko-let-platil-za-internet-s-200-mbit-s-ya-poluchal-v-dva-raza-menshe
+              - generic [ref=e1442]:
+                - generic [ref=e1443]: "Белорус несколько лет платил за интернет с 200 Мбит/с: «Я получал в два раза меньше»"
+                - generic [ref=e1444]: 238 комментариев за 2 дня
+          - listitem [ref=e1446]:
+            - link "Чтобы тянул все. Рейтинг игровых ноутбуков в 2026-м 141 комментарий за 3 дня" [ref=e1447] [cursor=pointer]:
+              - /url: https://tech.onliner.by/2026/08/05/kak-vybrat-igrovoi-noutbuk
+              - generic [ref=e1448]:
+                - generic [ref=e1449]: Чтобы тянул все. Рейтинг игровых ноутбуков в 2026-м
+                - generic [ref=e1450]: 141 комментарий за 3 дня
+          - listitem [ref=e1452]:
+            - link "«Белтелеком» подключил услугу и предложил отказаться от нее, если она не понадобится 118 комментариев за 4 дня" [ref=e1453] [cursor=pointer]:
+              - /url: https://tech.onliner.by/2026/08/04/btk-12
+              - generic [ref=e1454]:
+                - generic [ref=e1455]: «Белтелеком» подключил услугу и предложил отказаться от нее, если она не понадобится
+                - generic [ref=e1456]: 118 комментариев за 4 дня
+          - listitem [ref=e1458]:
+            - link "Эта задачка имеет много решений, но какое правильное? 107 комментариев за 2 дня" [ref=e1459] [cursor=pointer]:
+              - /url: https://tech.onliner.by/2026/08/06/zadachka-4
+              - generic [ref=e1460]:
+                - generic [ref=e1461]: Эта задачка имеет много решений, но какое правильное?
+                - generic [ref=e1462]: 107 комментариев за 2 дня
+          - listitem [ref=e1464]:
+            - link "«Стажеры шли за мидлов, джуны — за сеньоров». Почему белорусские айтишники врут в резюме? 59 комментариев за 2 дня" [ref=e1465] [cursor=pointer]:
+              - /url: https://tech.onliner.by/2026/08/06/ajtishniki-vrut-v-rezyume
+              - generic [ref=e1466]:
+                - generic [ref=e1467]: «Стажеры шли за мидлов, джуны — за сеньоров». Почему белорусские айтишники врут в резюме?
+                - generic [ref=e1468]: 59 комментариев за 2 дня
+        - generic [ref=e1470]:
+          - article [ref=e1473]:
+            - figure [ref=e1474]:
+              - link [ref=e1475] [cursor=pointer]:
+                - /url: https://tech.onliner.by/2026/08/07/zakulise-pokazov-odissei-imax-70-mm
+            - heading "Мы посмотрели новую «Одиссею» с пленки IMAX 70-мм. Вот почему люди летят ради этого через океан" [level=2] [ref=e1481]:
+              - link "Мы посмотрели новую «Одиссею» с пленки IMAX 70-мм. Вот почему люди летят ради этого через океан" [ref=e1482] [cursor=pointer]:
+                - /url: https://tech.onliner.by/2026/08/07/zakulise-pokazov-odissei-imax-70-mm
+            - generic [ref=e1483]:
+              - generic [ref=e1484]:
+                - generic [ref=e1485]: 31 242
+                - link "48" [ref=e1487] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/comments/2026/08/07/zakulise-pokazov-odissei-imax-70-mm?int_source=bubble_main_layer#comments
+                  - text: "48"
+              - generic [ref=e1489]: 1 день назад
+            - paragraph [ref=e1490]: «Одиссея» Кристофера Нолана добралась до Беларуси. Мировые сборы тем временем приближаются к миллиарду долларов, и секрет успеха здесь не только в имени режиссера и первоисточнике, но еще и в крафтово-элитарном опыте просмотра, через который и сам автор, и маркетологи постарались продать фильм. Дело в том, что «Одиссея» — первое кино в истории, целиком снятое на пленочные IMAX-камеры в полузабытом формате 70-мм, который поддерживает лишь 41 кинотеатр по всему миру. Мы побывали в одном из них.
+          - generic [ref=e1492]:
+            - figure [ref=e1493]:
+              - link [ref=e1494] [cursor=pointer]:
+                - /url: https://tech.onliner.by/2026/08/08/texnika-perestala-udivlyat
+            - article [ref=e1496]:
+              - generic [ref=e1497]:
+                - link "Гаджеты и вендоры" [ref=e1499] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/category/gadgets
+                - heading "Новый смартфон за $1000 в эквиваленте уже не впечатляет. И вот почему" [level=2] [ref=e1500]:
+                  - link "Новый смартфон за $1000 в эквиваленте уже не впечатляет. И вот почему" [ref=e1501] [cursor=pointer]:
+                    - /url: https://tech.onliner.by/2026/08/08/texnika-perestala-udivlyat
+                - generic [ref=e1502]:
+                  - generic [ref=e1503]:
+                    - generic [ref=e1504]: "6467"
+                    - link "48" [ref=e1506] [cursor=pointer]:
+                      - /url: https://tech.onliner.by/comments/2026/08/08/texnika-perestala-udivlyat?int_source=bubble_main_layer#comments
+                      - text: "48"
+                  - generic [ref=e1508]: 20 часов назад
+              - paragraph [ref=e1510]: "Мы едва ли не впервые в истории заполучили смарт-технику, предъявить серьезные претензии к которой очень сложно. Неужто индустрия, которая годами меняла наши привычки, испытывает кризис идей? Да, смартфон за пару секунд отыскивает дорогу, снимает лучше многих камер, живет на одном заряде световой день и позволяет оплачивать покупки. Но когда компании представляют новые модели, вместо восторга появляется вопрос: а что-то вообще поменялось?"
+          - list [ref=e1512]:
+            - listitem [ref=e1513]:
+              - figure [ref=e1514]:
+                - link [ref=e1515] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/2026/08/07/belorus-probralsya-v-chuzhoj-google-akkaunt-i-zarabotal-ugolovnoe-delo
+              - generic [ref=e1517]:
+                - heading "Белорус пробрался в чужой Google-аккаунт — и заработал уголовное дело" [level=3] [ref=e1518]:
+                  - link "Белорус пробрался в чужой Google-аккаунт — и заработал уголовное дело" [ref=e1519] [cursor=pointer]:
+                    - /url: https://tech.onliner.by/2026/08/07/belorus-probralsya-v-chuzhoj-google-akkaunt-i-zarabotal-ugolovnoe-delo
+                - generic [ref=e1520]:
+                  - generic [ref=e1521]:
+                    - generic [ref=e1522]: "7383"
+                    - link "3" [ref=e1524] [cursor=pointer]:
+                      - /url: https://tech.onliner.by/comments/2026/08/07/belorus-probralsya-v-chuzhoj-google-akkaunt-i-zarabotal-ugolovnoe-delo?int_source=bubble_main_layer#comments
+                      - text: "3"
+                  - generic [ref=e1526]: 1 день назад
+            - listitem [ref=e1527]:
+              - figure [ref=e1528]:
+                - link [ref=e1529] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/2026/08/07/dram-pamyati-nastolko-ne-xvataet-chto-radi-nee-postroyat-dva-zavoda-za-38-milliardov
+              - generic [ref=e1531]:
+                - heading "DRAM-памяти настолько не хватает, что ради нее построят два завода за 38 миллиардов" [level=3] [ref=e1532]:
+                  - link "DRAM-памяти настолько не хватает, что ради нее построят два завода за 38 миллиардов" [ref=e1533] [cursor=pointer]:
+                    - /url: https://tech.onliner.by/2026/08/07/dram-pamyati-nastolko-ne-xvataet-chto-radi-nee-postroyat-dva-zavoda-za-38-milliardov
+                - generic [ref=e1534]:
+                  - generic [ref=e1535]:
+                    - generic [ref=e1536]: "5030"
+                    - link "10" [ref=e1538] [cursor=pointer]:
+                      - /url: https://tech.onliner.by/comments/2026/08/07/dram-pamyati-nastolko-ne-xvataet-chto-radi-nee-postroyat-dva-zavoda-za-38-milliardov?int_source=bubble_main_layer#comments
+                      - text: "10"
+                  - generic [ref=e1540]: 1 день назад
+            - listitem [ref=e1541]:
+              - figure [ref=e1542]:
+                - link [ref=e1543] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/2026/08/07/nad-zemlej-sobralos-17-000-tonn-kosmicheskogo-musora
+              - generic [ref=e1545]:
+                - heading "Над Землей собралось 17 000 тонн космического мусора" [level=3] [ref=e1546]:
+                  - link "Над Землей собралось 17 000 тонн космического мусора" [ref=e1547] [cursor=pointer]:
+                    - /url: https://tech.onliner.by/2026/08/07/nad-zemlej-sobralos-17-000-tonn-kosmicheskogo-musora
+                - generic [ref=e1548]:
+                  - generic [ref=e1549]:
+                    - generic [ref=e1550]: "5822"
+                    - link "12" [ref=e1552] [cursor=pointer]:
+                      - /url: https://tech.onliner.by/comments/2026/08/07/nad-zemlej-sobralos-17-000-tonn-kosmicheskogo-musora?int_source=bubble_main_layer#comments
+                      - text: "12"
+                  - generic [ref=e1554]: 1 день назад
+            - listitem [ref=e1555]:
+              - figure [ref=e1556]:
+                - link [ref=e1557] [cursor=pointer]:
+                  - /url: https://tech.onliner.by/2026/08/07/krupnejshie-finansovye-kompanii-ssha-stradayut-iz-za-zvonkov-xakerov
+              - generic [ref=e1559]:
+                - heading "Крупнейшие финансовые компании США страдают из-за звонков хакеров" [level=3] [ref=e1560]:
+                  - link "Крупнейшие финансовые компании США страдают из-за звонков хакеров" [ref=e1561] [cursor=pointer]:
+                    - /url: https://tech.onliner.by/2026/08/07/krupnejshie-finansovye-kompanii-ssha-stradayut-iz-za-zvonkov-xakerov
+                - generic [ref=e1562]:
+                  - generic [ref=e1564]: "2236"
+                  - generic [ref=e1566]: 1 день назад
+        - contentinfo [ref=e1567]:
+          - link "Все новости о технологиях" [ref=e1568] [cursor=pointer]:
+            - /url: https://tech.onliner.by
+      - generic [ref=e1569]:
+        - banner [ref=e1570]:
+          - heading "Видеообзоры Onlíner" [level=2] [ref=e1571]:
+            - link "Видеообзоры Onlíner" [ref=e1572] [cursor=pointer]:
+              - /url: https://www.youtube.com/@onlinertech
+        - grid [ref=e1574]:
+          - generic [ref=e1575]:
+            - link "Битва конкурентов HONOR 600 Pro против Xioami 17T Pro" [ref=e1578] [cursor=pointer]:
+              - /url: https://youtu.be/0Ty72AcRf84
+              - generic [ref=e1579]: Битва конкурентов
+              - paragraph [ref=e1580]: HONOR 600 Pro против Xioami 17T Pro
+            - link "Xiaomi 17T Pro Новинка" [ref=e1583] [cursor=pointer]:
+              - /url: https://youtu.be/-7t69rGJwWc
+              - generic [ref=e1584]: Xiaomi 17T Pro
+              - paragraph [ref=e1585]: Новинка
+          - link "Умные колонки Какую «Яндекс Станцию» выбрать в 2026?" [ref=e1589] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=9SDrojqtWJw
+            - generic [ref=e1590]: Умные колонки
+            - paragraph [ref=e1591]: Какую «Яндекс Станцию» выбрать в 2026?
+          - link "Кто лучше снимает? Xiaomi/iPhone/OnePlus/Honor/Samsung" [ref=e1595] [cursor=pointer]:
+            - /url: https://youtu.be/Vqvr4Q4vzgQ
+            - generic [ref=e1596]: Кто лучше снимает?
+            - paragraph [ref=e1597]: Xiaomi/iPhone/OnePlus/Honor/Samsung
+      - generic [ref=e1599]:
+        - banner [ref=e1600]:
+          - heading "Недвижимость" [level=2] [ref=e1601]:
+            - link "Недвижимость" [ref=e1602] [cursor=pointer]:
+              - /url: https://realt.onliner.by
+          - link "RSS" [ref=e1603] [cursor=pointer]:
+            - /url: https://realt.onliner.by/feed
+        - list [ref=e1604]:
+          - listitem [ref=e1605]:
+            - link "Шесть лет назад мир потряс один из самых мощных неядерных взрывов нет комментариев" [ref=e1606] [cursor=pointer]:
+              - /url: https://realt.onliner.by/2026/08/04/pyat-let-posle-chudovishhnogo-vzryva
+              - generic [ref=e1607]:
+                - generic [ref=e1608]: Шесть лет назад мир потряс один из самых мощных неядерных взрывов
+                - generic [ref=e1609]: нет комментариев
+          - listitem [ref=e1611]:
+            - link "Придется купить сразу два машино-места. В минской новостройке предлагают жилье «с обременением» нет комментариев" [ref=e1612] [cursor=pointer]:
+              - /url: https://realt.onliner.by/2026/08/07/v-stepyanke-prodayut-zhile
+              - generic [ref=e1613]:
+                - generic [ref=e1614]: Придется купить сразу два машино-места. В минской новостройке предлагают жилье «с обременением»
+                - generic [ref=e1615]: нет комментариев
+          - listitem [ref=e1617]:
+            - link "Пенсионерка решила подзаработать на своей четырехкомнатной квартире. Теперь грозит реальный срок нет комментариев" [ref=e1618] [cursor=pointer]:
+              - /url: https://realt.onliner.by/2026/08/07/pensionerka-reshila-podzarabotat
+              - generic [ref=e1619]:
+                - generic [ref=e1620]: Пенсионерка решила подзаработать на своей четырехкомнатной квартире. Теперь грозит реальный срок
+                - generic [ref=e1621]: нет комментариев
+          - listitem [ref=e1623]:
+            - link "«Кол-центр разрывается от звонков». Что происходит в офисах продаж после анонса кредита под 1%? нет комментариев" [ref=e1624] [cursor=pointer]:
+              - /url: https://realt.onliner.by/2026/08/07/koll-centr-razryvaetsya
+              - generic [ref=e1625]:
+                - generic [ref=e1626]: «Кол-центр разрывается от звонков». Что происходит в офисах продаж после анонса кредита под 1%?
+                - generic [ref=e1627]: нет комментариев
+          - listitem [ref=e1629]:
+            - link "Мужчине угрожает снос его дома из-за соседской жалобы нет комментариев" [ref=e1630] [cursor=pointer]:
+              - /url: https://realt.onliner.by/2026/08/07/muzhchine-ugrozhaet-snos
+              - generic [ref=e1631]:
+                - generic [ref=e1632]: Мужчине угрожает снос его дома из-за соседской жалобы
+                - generic [ref=e1633]: нет комментариев
+        - generic [ref=e1635]:
+          - article [ref=e1638]:
+            - figure [ref=e1639]:
+              - link [ref=e1640] [cursor=pointer]:
+                - /url: https://realt.onliner.by/2026/08/08/chto-posmotret-v-mogileve
+              - generic [ref=e1644]: ГАЙД
+            - heading "Зачем ехать в Могилев? Нашли 14 мест, ради которых стоит выбраться" [level=2] [ref=e1645]:
+              - link "Зачем ехать в Могилев? Нашли 14 мест, ради которых стоит выбраться" [ref=e1646] [cursor=pointer]:
+                - /url: https://realt.onliner.by/2026/08/08/chto-posmotret-v-mogileve
+            - generic [ref=e1647]:
+              - generic [ref=e1649]: "8598"
+              - generic [ref=e1651]: 21 час назад
+            - paragraph [ref=e1652]: Планируете посетить Могилев, но не хочется тратить время на поиск интересных мест? Мы уже составили маршрут, который позволит вам взглянуть на город с нетипичной стороны. Кроме привычной прогулки по достопримечательностям, предлагаем вам отправиться еще и на охоту за муралами, которые давно стали неотъемлемой частью облика города. Такой маршрут проведет вас по знаковым местам, атмосферным набережным и позволит увидеть Могилев глазами его жителей.
+          - generic [ref=e1654]:
+            - figure [ref=e1655]:
+              - link [ref=e1656] [cursor=pointer]:
+                - /url: https://realt.onliner.by/2026/08/08/dachnyj-sezon-33
+            - article [ref=e1658]:
+              - generic [ref=e1659]:
+                - link "Деревня" [ref=e1661] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/category/derevnya
+                - heading "«Дачный сезон». Купили запущенный дом, в который не хотелось заходить, и превратили в конфетку" [level=2] [ref=e1662]:
+                  - link "«Дачный сезон». Купили запущенный дом, в который не хотелось заходить, и превратили в конфетку" [ref=e1663] [cursor=pointer]:
+                    - /url: https://realt.onliner.by/2026/08/08/dachnyj-sezon-33
+                - generic [ref=e1664]:
+                  - generic [ref=e1666]: 29 127
+                  - generic [ref=e1668]: 20 часов назад
+              - paragraph [ref=e1670]: "Начинаем публиковать истории второго тура конкурса «Дачный сезон». В этом выпуске своим опытом делится Иван. Вместе с женой они продали дом в деревне, чтобы купить небольшую хату в садовом товарищества недалеко от Минска. Почти весь ремонт мужчина выполнил своими руками всего за полтора года: обшил здание карельской елью, перебрал печь, сделал перепланировку и выстроил новый быт для всей семьи."
+          - list [ref=e1672]:
+            - listitem [ref=e1673]:
+              - figure [ref=e1674]:
+                - link [ref=e1675] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/2026/08/08/spasateli-prodolzhayut-likvidirovat-posledstviya-nepogody-v-minskoj-oblasti
+              - generic [ref=e1677]:
+                - heading "Спасатели продолжают ликвидировать последствия непогоды в Минской области" [level=3] [ref=e1678]:
+                  - link "Спасатели продолжают ликвидировать последствия непогоды в Минской области" [ref=e1679] [cursor=pointer]:
+                    - /url: https://realt.onliner.by/2026/08/08/spasateli-prodolzhayut-likvidirovat-posledstviya-nepogody-v-minskoj-oblasti
+                - generic [ref=e1680]:
+                  - generic [ref=e1682]: "1076"
+                  - generic [ref=e1684]: 6 часов назад
+            - listitem [ref=e1685]:
+              - figure [ref=e1686]:
+                - link [ref=e1687] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/2026/08/08/v-sekretnom-dome
+              - generic [ref=e1689]:
+                - heading "Стали известны цены на квартиры в «секретном» доме на Веры Хоружей" [level=3] [ref=e1690]:
+                  - link "Стали известны цены на квартиры в «секретном» доме на Веры Хоружей" [ref=e1691] [cursor=pointer]:
+                    - /url: https://realt.onliner.by/go/1122812?hash=eyJkYXRlIjoiMjAyNi0wOC0wOCAxMToxNDoxMCIsImluZGV4IjowfQ%3D%3D
+                - generic [ref=e1692]:
+                  - generic [ref=e1694]: "8290"
+                  - generic [ref=e1696]: 17 часов назад
+            - listitem [ref=e1697]:
+              - figure [ref=e1698]:
+                - link [ref=e1699] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/2026/08/07/posle-nochnoj-grozy-pod
+              - generic [ref=e1701]:
+                - heading "Лес не выдержал сильного ветра. Показываем, что происходит под Молодечно после грозы" [level=3] [ref=e1702]:
+                  - link "Лес не выдержал сильного ветра. Показываем, что происходит под Молодечно после грозы" [ref=e1703] [cursor=pointer]:
+                    - /url: https://realt.onliner.by/2026/08/07/posle-nochnoj-grozy-pod
+                - generic [ref=e1704]:
+                  - generic [ref=e1706]: 18 675
+                  - generic [ref=e1708]: 1 день назад
+            - listitem [ref=e1709]:
+              - figure [ref=e1710]:
+                - link [ref=e1711] [cursor=pointer]:
+                  - /url: https://realt.onliner.by/2026/08/07/sdaetsya-pri-uslovii
+              - generic [ref=e1713]:
+                - heading "«Сдается при условии ремонта за 6 месяцев». Как белорусы «монетизируют» квартиры в бетоне" [level=3] [ref=e1714]:
+                  - link "«Сдается при условии ремонта за 6 месяцев». Как белорусы «монетизируют» квартиры в бетоне" [ref=e1715] [cursor=pointer]:
+                    - /url: https://realt.onliner.by/2026/08/07/sdaetsya-pri-uslovii
+                - generic [ref=e1716]:
+                  - generic [ref=e1718]: 40 484
+                  - generic [ref=e1720]: 1 день назад
+        - contentinfo [ref=e1721]:
+          - link "Все новости о недвижимости" [ref=e1722] [cursor=pointer]:
+            - /url: https://realt.onliner.by
+      - generic [ref=e1723]:
+        - generic [ref=e1725]:
+          - generic [ref=e1726]:
+            - link "Барахолка" [ref=e1727] [cursor=pointer]:
+              - /url: http://baraholka.onliner.by
+            - link "Разместить объявление" [ref=e1728] [cursor=pointer]:
+              - /url: http://baraholka.onliner.by/fleamarketposting.php
+          - paragraph [ref=e1730]: 150 000 уникальных пользователей и около 5000 новых объявлений ежедневно!
+        - grid [ref=e1731]:
+          - link "Инструменты для ремонта и стройки" [ref=e1733] [cursor=pointer]:
+            - /url: https://baraholka.onliner.by/viewforum.php?f=591&start=0
+            - generic [ref=e1734]: Инструменты для ремонта и стройки
+            - paragraph
+          - link "Техника Apple на Барахолке Все так же хороша" [ref=e1737] [cursor=pointer]:
+            - /url: https://baraholka.onliner.by/viewforum.php?f=643
+            - generic [ref=e1738]: Техника Apple на Барахолке
+            - paragraph [ref=e1739]: Все так же хороша
+          - generic [ref=e1741]:
+            - list [ref=e1743]:
+              - listitem [ref=e1744]:
+                - link "Умные часы и фитнес-браслеты 151" [ref=e1745] [cursor=pointer]:
+                  - /url: http://baraholka.onliner.by/viewforum.php?f=1674
+              - listitem [ref=e1746]:
+                - link "Беспроводные колонки. Наушники. Другая портативная аудиотехника 386" [ref=e1747] [cursor=pointer]:
+                  - /url: http://baraholka.onliner.by/viewforum.php?f=189
+              - listitem [ref=e1748]:
+                - link "Мобильные телефоны 748" [ref=e1749] [cursor=pointer]:
+                  - /url: http://baraholka.onliner.by/viewforum.php?f=2
+              - listitem [ref=e1750]:
+                - link "Apple. Mac. iPod. iPhone. iPad. 169" [ref=e1751] [cursor=pointer]:
+                  - /url: http://baraholka.onliner.by/viewforum.php?f=643
+              - listitem [ref=e1752]:
+                - link "Планшеты и электронные книги 178" [ref=e1753] [cursor=pointer]:
+                  - /url: http://baraholka.onliner.by/viewforum.php?f=405
+            - link "Популярное в барахолке" [ref=e1754] [cursor=pointer]:
+              - /url: http://baraholka.onliner.by
+            - link "Все разделы барахолки" [ref=e1755] [cursor=pointer]:
+              - /url: http://baraholka.onliner.by
+          - link "Диваны и мягкая мебель Б/У и новые на Барахолке" [ref=e1757] [cursor=pointer]:
+            - /url: https://baraholka.onliner.by/viewforum.php?f=1045
+            - generic [ref=e1758]: Диваны и мягкая мебель
+            - paragraph [ref=e1759]: Б/У и новые на Барахолке
+        - generic [ref=e1762]:
+          - link "Все разделы Барахолки" [ref=e1763] [cursor=pointer]:
+            - /url: http://baraholka.onliner.by
+          - text: или
+          - link "233 новых объявления за 24 часа" [ref=e1764] [cursor=pointer]:
+            - /url: http://baraholka.onliner.by/search.php?type=lastposts&time=86400
+      - generic [ref=e1765]:
+        - banner [ref=e1766]:
+          - heading "Форум" [level=2] [ref=e1767]:
+            - link "Форум" [ref=e1768] [cursor=pointer]:
+              - /url: https://forum.onliner.by
+        - list [ref=e1770]:
+          - listitem [ref=e1771]:
+            - link "Выбираем электромобиль 22 146 сообщений" [ref=e1772] [cursor=pointer]:
+              - /url: https://forum.onliner.by/viewtopic.php?t=97259
+              - generic [ref=e1773]:
+                - generic [ref=e1774]: Выбираем электромобиль
+                - generic [ref=e1775]: 22 146 сообщений
+          - listitem [ref=e1777]:
+            - link "Что с курсом доллара? 90 543 сообщения" [ref=e1778] [cursor=pointer]:
+              - /url: https://forum.onliner.by/viewtopic.php?t=25607220
+              - generic [ref=e1779]:
+                - generic [ref=e1780]: Что с курсом доллара?
+                - generic [ref=e1781]: 90 543 сообщения
+          - listitem [ref=e1783]:
+            - link "Дачники, вы где? 135 057 сообщений" [ref=e1784] [cursor=pointer]:
+              - /url: https://forum.onliner.by/viewtopic.php?t=84581
+              - generic [ref=e1785]:
+                - generic [ref=e1786]: Дачники, вы где?
+                - generic [ref=e1787]: 135 057 сообщений
+          - listitem [ref=e1789]:
+            - link "Китайские авто — норм? 3667 сообщений" [ref=e1790] [cursor=pointer]:
+              - /url: https://forum.onliner.by/viewtopic.php?t=25682530
+              - generic [ref=e1791]:
+                - generic [ref=e1792]: Китайские авто — норм?
+                - generic [ref=e1793]: 3667 сообщений
+          - listitem [ref=e1795]:
+            - link "Где лучшая шаурма? 32 992 сообщения" [ref=e1796] [cursor=pointer]:
+              - /url: https://forum.onliner.by/viewtopic.php?t=661072
+              - generic [ref=e1797]:
+                - generic [ref=e1798]: Где лучшая шаурма?
+                - generic [ref=e1799]: 32 992 сообщения
+        - generic [ref=e1801]:
+          - generic [ref=e1803]:
+            - generic [ref=e1804]: Самые обсуждаемые темы
+            - list [ref=e1805]:
+              - listitem [ref=e1806]:
+                - link "Жалобная книга Онлайнера 2.0" [ref=e1807] [cursor=pointer]:
+                  - /url: https://forum.onliner.by/viewtopic.php?t=24798149
+                - text: 143,9K
+              - listitem [ref=e1808]:
+                - link "Обсуждение курсов валют. Часть 6." [ref=e1809] [cursor=pointer]:
+                  - /url: https://forum.onliner.by/viewtopic.php?t=25607220
+                - text: 90,5K
+              - listitem [ref=e1810]:
+                - link "Религия. Ваше отношение. (5)" [ref=e1811] [cursor=pointer]:
+                  - /url: https://forum.onliner.by/viewtopic.php?t=25619049
+                - text: 88,2K
+              - listitem [ref=e1812]:
+                - link "Беларусбанк. Вопросы, ответы, обсуждение." [ref=e1813] [cursor=pointer]:
+                  - /url: https://forum.onliner.by/viewtopic.php?t=5281098
+                - text: 35,4K
+              - listitem [ref=e1814]:
+                - link "Выбор мобильного телефона" [ref=e1815] [cursor=pointer]:
+                  - /url: https://forum.onliner.by/viewtopic.php?t=527250
+                - text: 163,2K
+              - listitem [ref=e1816]:
+                - link "Выбор акустики и усилителей для стерео. Hi-Fi и не только" [ref=e1817] [cursor=pointer]:
+                  - /url: https://forum.onliner.by/viewtopic.php?t=3566506
+                - text: 37,7K
+              - listitem [ref=e1818]:
+                - link "Выбор и настройка компьютера (3)" [ref=e1819] [cursor=pointer]:
+                  - /url: https://forum.onliner.by/viewtopic.php?t=1033150
+                - text: 330,4K
+          - generic [ref=e1821]:
+            - figure [ref=e1822]:
+              - link [ref=e1823] [cursor=pointer]:
+                - /url: https://forum.onliner.by/viewtopic.php?t=26140743&view=unread#unread
+            - article [ref=e1825]:
+              - generic [ref=e1826]:
+                - link "Спорт" [ref=e1828] [cursor=pointer]:
+                  - /url: https://forum.onliner.by/viewforum.php?f=898
+                - heading "А за кого болеете вы в Formula-1?" [level=2] [ref=e1829]:
+                  - link "А за кого болеете вы в Formula-1?" [ref=e1830] [cursor=pointer]:
+                    - /url: https://forum.onliner.by/viewtopic.php?t=26140743&view=unread#unread
+                - generic [ref=e1831]:
+                  - link "3,5K" [ref=e1833] [cursor=pointer]:
+                    - /url: https://forum.onliner.by/viewtopic.php?t=26140743&view=unread#unread
+                    - text: 3,5K
+                  - generic [ref=e1835]: 11 часов назад
+              - paragraph [ref=e1837]: Если вы готовы отложить любые дела из-за старта гонки, а имена пилотов вы произносите так, будто это ваши старые знакомые, то эта ветка для вас. Расскажите, кто ваш любимчик в этом сезоне? А кто главное разочарование?
+          - article [ref=e1840]:
+            - figure [ref=e1841]:
+              - link [ref=e1842] [cursor=pointer]:
+                - /url: https://forum.onliner.by/viewtopic.php?t=590965&view=unread#unread
+            - 'heading "И все-таки что лучше: Android или iPhone?" [level=2] [ref=e1844]':
+              - 'link "И все-таки что лучше: Android или iPhone?" [ref=e1845] [cursor=pointer]':
+                - /url: https://forum.onliner.by/viewtopic.php?t=590965&view=unread#unread
+            - generic [ref=e1846]:
+              - link "40K" [ref=e1848] [cursor=pointer]:
+                - /url: https://forum.onliner.by/viewtopic.php?t=590965&view=unread#unread
+                - text: 40K
+              - generic [ref=e1850]: 6 дней назад
+            - paragraph [ref=e1851]: Здесь сравниваем мощность камеры, емкость батареи, интерфейс и цену, чтобы упростить для себя покупку нового смартфона.
+          - article [ref=e1854]:
+            - figure [ref=e1855]:
+              - link [ref=e1856] [cursor=pointer]:
+                - /url: https://forum.onliner.by/viewtopic.php?t=24798149&view=unread#unread
+            - heading "Есть жалобы? Вам сюда" [level=2] [ref=e1858]:
+              - link "Есть жалобы? Вам сюда" [ref=e1859] [cursor=pointer]:
+                - /url: https://forum.onliner.by/viewtopic.php?t=24798149&view=unread#unread
+            - generic [ref=e1860]:
+              - link "143,9K" [ref=e1862] [cursor=pointer]:
+                - /url: https://forum.onliner.by/viewtopic.php?t=24798149&view=unread#unread
+                - text: 143,9K
+              - generic [ref=e1864]: 4 часа назад
+            - paragraph [ref=e1865]: Опять что-то пошло не так? Заметили просрочку на полке, пришла платежка с сюрпризами, «кинул» строитель? Не держите злобу и обиду в себе — делитесь с нами!
+        - contentinfo [ref=e1866]:
+          - link "Все разделы форума" [ref=e1867] [cursor=pointer]:
+            - /url: https://forum.onliner.by
+          - link "Новое за 24 часа" [ref=e1868] [cursor=pointer]:
+            - /url: https://forum.onliner.by/search.php?type=lastposts&time=86400
+  - contentinfo [ref=e1869]:
+    - generic [ref=e1872]:
+      - generic [ref=e1873]:
+        - list [ref=e1874]:
+          - listitem [ref=e1875]:
+            - link "О компании" [ref=e1876] [cursor=pointer]:
+              - /url: https://blog.onliner.by/about
+          - listitem [ref=e1877]:
+            - link "Контакты редакции" [ref=e1878] [cursor=pointer]:
+              - /url: https://people.onliner.by/contacts
+          - listitem [ref=e1879]:
+            - link "Реклама" [ref=e1880] [cursor=pointer]:
+              - /url: https://b2breg.onliner.by/advertising
+          - listitem [ref=e1881]:
+            - link "Тарифы" [ref=e1882] [cursor=pointer]:
+              - /url: https://docs.google.com/spreadsheets/d/1pDQOO6NOl4z2yjJeYzkb7CFzh9LgY2NF/preview
+          - listitem [ref=e1883]:
+            - link "Манифест" [ref=e1884] [cursor=pointer]:
+              - /url: https://blog.onliner.by/manifest
+          - listitem [ref=e1885]:
+            - link "Пользовательское соглашение" [ref=e1886] [cursor=pointer]:
+              - /url: https://blog.onliner.by/siterules
+          - listitem [ref=e1887]:
+            - link "Публичные договоры" [ref=e1888] [cursor=pointer]:
+              - /url: https://blog.onliner.by/publichnye-dogovory
+          - listitem [ref=e1889]:
+            - link "Политика обработки персональных данных" [ref=e1890] [cursor=pointer]:
+              - /url: https://blog.onliner.by/politika-konfidencialnosti
+          - listitem [ref=e1891]:
+            - link "Поддержка пользователей" [ref=e1892] [cursor=pointer]:
+              - /url: https://support.onliner.by
+          - listitem [ref=e1893]:
+            - link "Информация для покупателей" [ref=e1894] [cursor=pointer]:
+              - /url: https://blog.onliner.by/informaciya-dlya-pokupatelya
+          - listitem [ref=e1895]: Настройка cookie
+        - generic [ref=e1896]:
+          - link [ref=e1897] [cursor=pointer]:
+            - /url: https://t.me/+RH9nPH0rIHI4Y2Uy
+          - link [ref=e1898] [cursor=pointer]:
+            - /url: https://www.instagram.com/onlinerby
+          - link [ref=e1899] [cursor=pointer]:
+            - /url: https://vk.com/onliner
+          - link [ref=e1900] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@onlinereasy
+          - link [ref=e1901] [cursor=pointer]:
+            - /url: https://www.threads.com/@onlinerby/post/CuV4cMZIOVq?xmt=AQF0snhF3SR3NnEmU-lD9P9ZYnoHfmoFEri491nU8dSc5g
+      - generic [ref=e1902]:
+        - img "Onlíner" [ref=e1904]
+        - generic [ref=e1905]: © 2001—2026 Onlíner
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test'
+  2  | import { Page, Locator } from '@playwright/test'
+  3  | 
+  4  | export default class Main {
+  5  |     readonly page: Page;
+  6  |     readonly navNews: Locator;
+  7  |     readonly logo: Locator;
+  8  |     readonly login: Locator;
+  9  |     readonly search: Locator;
+  10 |     readonly searchPop: Locator;
+  11 |     readonly searchLink: Locator;
+  12 |     readonly registrationLink: Locator;
+  13 |     readonly cookie: Locator;
+  14 |     readonly cookiePanel: Locator;
+  15 |     readonly footer: Locator;
+  16 |     readonly smallNav: Locator;
+  17 |     readonly footerLinks: string[];
+  18 |     readonly footerPages: string[];
+  19 | 
+  20 | 
+  21 |     constructor(page: Page) {
+  22 |         this.page = page
+  23 |         this.navNews = page.locator('.b-main-navigation__text').getByText("Новости")
+  24 |         this.logo = page.locator('.onliner_logo')
+  25 |         this.login = page.locator('.auth-bar__item--text').getByText("Вход")
+  26 |         this.search = page.locator('.fast-search__input')
+  27 |         this.searchPop = page.locator('.search__input')
+  28 |         this.searchLink = page.locator('#fast-search-modal iframe').contentFrame().getByRole('link', { name: 'Перейти к результатам поиска «huawei»' })
+  29 |         this.registrationLink = page.getByText('Зарегистрироваться на Onlíner')
+  30 |         this.cookie = page.getByText('Принять все cookie')
+  31 |         this.cookiePanel = page.locator('div').filter({ hasText: 'Мы используем cookie' }).nth(2)
+  32 |         this.footerLinks = ['О компании', 'Контакты редакции', 'Реклама', 'Тарифы', 'Вакансии', 'Манифест', 'Пользовательское соглашение']
+  33 |         this.footerPages = ['about', 'contacts', 'advertising', 'https://docs.google.com/', 'vacancy', 'manifest', 'siterules']
+  34 |         this.footer = page.locator('footer')
+  35 |         this.smallNav = page.locator('header-style__underlay')
+  36 |     }
+  37 | 
+  38 |     async stat() {
+  39 |         return await this.page.goto('')
+  40 |     }
+  41 | 
+  42 |     async navigate() {
+  43 |         await this.page.goto('')
+  44 |         await this.cookie.click();
+  45 |         await this.cookiePanel.waitFor({ state: 'hidden' });
+  46 | 
+  47 |     }
+  48 | 
+  49 |     async getLocator(text: string) {
+  50 |         let loca = this.footer.getByText(text)
+> 51 |         await loca.click()
+     |                    ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  52 |     }
+  53 | 
+  54 | }
+```
